@@ -1,0 +1,703 @@
+Information: Building the design 'carry_select_adder'. (HDL-193)
+Warning: Cannot find the design 'carry_select_adder' in the library 'WORK'. (LBR-1)
+Warning: Unable to resolve reference 'carry_select_adder' in 'fpfma_pipeline'. (LINK-5)
+Warning: Design 'fpfma_pipeline' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+Information: Input delay ('fall') on clock port 'clk_DQS' will be added to the clock's propagated skew. (TIM-112)
+Information: Input delay ('rise') on clock port 'clk_DQS' will be added to the clock's propagated skew. (TIM-112)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 10
+        -max_paths 10
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Mon Apr  5 14:52:39 2021
+****************************************
+
+Operating Conditions: ssg0p9v0c   Library: tcbn28hpcplusbwp12t30p140ssg0p9v0c
+Wire Load Model Mode: segmented
+
+  Startpoint: pipe2/exp1_p2_reg[4]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[27]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[4]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[4]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[4] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[4] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[4] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_4/S (FA1D1BWP12T30P140) 0.029186174
+                                                                 0.112001687 r
+  normalize_shift/sub_18_2/DIFF[4] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001687 r
+  normalize_shift/U10/Z (AO22D0BWP12T30P140)          0.028006613
+                                                                 0.140008301 r
+  normalize_shift/exp[4] (normalize)                  0.000000000
+                                                                 0.140008301 r
+  pipe3/result[27] (reg_pipeline3)                    0.000000000
+                                                                 0.140008301 r
+  pipe3/result_p3_reg[27]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140008301 r
+  data arrival time                                              0.140008301
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[27]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140008301
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009214431
+
+
+  Startpoint: pipe2/exp1_p2_reg[2]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[25]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[2]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[2]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[2] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[2] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[2] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_2/S (FA1D1BWP12T30P140) 0.029186174
+                                                                 0.112001687 r
+  normalize_shift/sub_18_2/DIFF[2] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001687 r
+  normalize_shift/U12/Z (AO22D0BWP12T30P140)          0.028006718
+                                                                 0.140008405 r
+  normalize_shift/exp[2] (normalize)                  0.000000000
+                                                                 0.140008405 r
+  pipe3/result[25] (reg_pipeline3)                    0.000000000
+                                                                 0.140008405 r
+  pipe3/result_p3_reg[25]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140008405 r
+  data arrival time                                              0.140008405
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[25]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140008405
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009214327
+
+
+  Startpoint: pipe2/exp1_p2_reg[5]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[28]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[5]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[5]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[5] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[5] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[5] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_5/S (FA1D1BWP12T30P140) 0.029186174
+                                                                 0.112001687 r
+  normalize_shift/sub_18_2/DIFF[5] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001687 r
+  normalize_shift/U9/Z (AO22D0BWP12T30P140)           0.028006732
+                                                                 0.140008420 r
+  normalize_shift/exp[5] (normalize)                  0.000000000
+                                                                 0.140008420 r
+  pipe3/result[28] (reg_pipeline3)                    0.000000000
+                                                                 0.140008420 r
+  pipe3/result_p3_reg[28]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140008420 r
+  data arrival time                                              0.140008420
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[28]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140008420
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009214312
+
+
+  Startpoint: pipe2/exp1_p2_reg[6]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[29]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[6]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[6]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[6] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[6] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[6] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_6/S (FA1D1BWP12T30P140) 0.029186174
+                                                                 0.112001687 r
+  normalize_shift/sub_18_2/DIFF[6] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001687 r
+  normalize_shift/U8/Z (AO22D0BWP12T30P140)           0.028006762
+                                                                 0.140008450 r
+  normalize_shift/exp[6] (normalize)                  0.000000000
+                                                                 0.140008450 r
+  pipe3/result[29] (reg_pipeline3)                    0.000000000
+                                                                 0.140008450 r
+  pipe3/result_p3_reg[29]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140008450 r
+  data arrival time                                              0.140008450
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[29]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140008450
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009214282
+
+
+  Startpoint: pipe2/exp1_p2_reg[1]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[1]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[1]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[1] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[1] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[1] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_1/S (FA1D1BWP12T30P140) 0.029186167
+                                                                 0.112001680 r
+  normalize_shift/sub_18_2/DIFF[1] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001680 r
+  normalize_shift/U13/Z (AO22D0BWP12T30P140)          0.028006814
+                                                                 0.140008494 r
+  normalize_shift/exp[1] (normalize)                  0.000000000
+                                                                 0.140008494 r
+  pipe3/result[24] (reg_pipeline3)                    0.000000000
+                                                                 0.140008494 r
+  pipe3/result_p3_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140008494 r
+  data arrival time                                              0.140008494
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140008494
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009214237
+
+
+  Startpoint: pipe2/exp1_p2_reg[3]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[26]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[3]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[3]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[3] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[3] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[3] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_3/S (FA1D1BWP12T30P140) 0.029186174
+                                                                 0.112001687 r
+  normalize_shift/sub_18_2/DIFF[3] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001687 r
+  normalize_shift/U11/Z (AO22D0BWP12T30P140)          0.028006822
+                                                                 0.140008509 r
+  normalize_shift/exp[3] (normalize)                  0.000000000
+                                                                 0.140008509 r
+  pipe3/result[26] (reg_pipeline3)                    0.000000000
+                                                                 0.140008509 r
+  pipe3/result_p3_reg[26]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140008509 r
+  data arrival time                                              0.140008509
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[26]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140008509
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009214222
+
+
+  Startpoint: pipe2/exp1_p2_reg[7]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[30]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[7]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[7]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[7] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[7] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[7] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_7/S (FA1D1BWP12T30P140) 0.029186174
+                                                                 0.112001687 r
+  normalize_shift/sub_18_2/DIFF[7] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001687 r
+  normalize_shift/U7/Z (AO22D0BWP12T30P140)           0.028006881
+                                                                 0.140008569 r
+  normalize_shift/exp[7] (normalize)                  0.000000000
+                                                                 0.140008569 r
+  pipe3/result[30] (reg_pipeline3)                    0.000000000
+                                                                 0.140008569 r
+  pipe3/result_p3_reg[30]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140008569 r
+  data arrival time                                              0.140008569
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[30]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140008569
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009214163
+
+
+  Startpoint: pipe2/exp1_p2_reg[4]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[27]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[4]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[4]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[4] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[4] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[4] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_4/S (FA1D1BWP12T30P140) 0.029186167
+                                                                 0.112001680 r
+  normalize_shift/sub_18_2/DIFF[4] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001680 r
+  normalize_shift/U10/Z (AO22D0BWP12T30P140)          0.028072290
+                                                                 0.140073970 r
+  normalize_shift/exp[4] (normalize)                  0.000000000
+                                                                 0.140073970 r
+  pipe3/result[27] (reg_pipeline3)                    0.000000000
+                                                                 0.140073970 r
+  pipe3/result_p3_reg[27]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140073970 r
+  data arrival time                                              0.140073970
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[27]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140073970
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009148762
+
+
+  Startpoint: pipe2/exp1_p2_reg[2]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[25]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[2]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[2]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136167
+                                                                 0.082815506 r
+  pipe2/exp1_p2[2] (reg_pipeline2)                    0.000000000
+                                                                 0.082815506 r
+  normalize_shift/exp1[2] (normalize)                 0.000000000
+                                                                 0.082815506 r
+  normalize_shift/sub_18_2/A[2] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815506 r
+  normalize_shift/sub_18_2/U2_2/S (FA1D1BWP12T30P140) 0.029186174
+                                                                 0.112001680 r
+  normalize_shift/sub_18_2/DIFF[2] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001680 r
+  normalize_shift/U12/Z (AO22D0BWP12T30P140)          0.028072394
+                                                                 0.140074074 r
+  normalize_shift/exp[2] (normalize)                  0.000000000
+                                                                 0.140074074 r
+  pipe3/result[25] (reg_pipeline3)                    0.000000000
+                                                                 0.140074074 r
+  pipe3/result_p3_reg[25]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140074074 r
+  data arrival time                                              0.140074074
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[25]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140074074
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009148657
+
+
+  Startpoint: pipe2/exp1_p2_reg[5]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[28]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.023679337
+                                                                 0.023679337
+  pipe2/exp1_p2_reg[5]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.023679337 r
+  pipe2/exp1_p2_reg[5]/Q (DFCNQOPTSADD8BWP12T30P140)  0.059136175
+                                                                 0.082815513 r
+  pipe2/exp1_p2[5] (reg_pipeline2)                    0.000000000
+                                                                 0.082815513 r
+  normalize_shift/exp1[5] (normalize)                 0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/A[5] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.082815513 r
+  normalize_shift/sub_18_2/U2_5/S (FA1D1BWP12T30P140) 0.029186174
+                                                                 0.112001687 r
+  normalize_shift/sub_18_2/DIFF[5] (normalize_DW01_sub_0_DW01_sub_22)
+                                                      0.000000000
+                                                                 0.112001687 r
+  normalize_shift/U9/Z (AO22D0BWP12T30P140)           0.028072402
+                                                                 0.140074089 r
+  normalize_shift/exp[5] (normalize)                  0.000000000
+                                                                 0.140074089 r
+  pipe3/result[28] (reg_pipeline3)                    0.000000000
+                                                                 0.140074089 r
+  pipe3/result_p3_reg[28]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.140074089 r
+  data arrival time                                              0.140074089
+
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.060157284
+                                                                 0.060157284
+  pipe3/result_p3_reg[28]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                      0.000000000
+                                                                 0.060157284 r
+  library hold time                                   0.089065455
+                                                                 0.149222732
+  data required time                                             0.149222732
+  --------------------------------------------------------------------------
+  data required time                                             0.149222732
+  data arrival time                                              -0.140074089
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.009148642
+
+
+1

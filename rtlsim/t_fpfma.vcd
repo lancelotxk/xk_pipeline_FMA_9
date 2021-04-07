@@ -1,0 +1,1993 @@
+$date
+    Mar 17, 2021  15:11:10
+$end
+$version
+    TOOL:	ncsim(64)	15.20-p001
+$end
+$timescale
+    1 ps
+$end
+
+$scope module t_fpfma $end
+$var parameter 32 !    WIDTH  $end
+$var parameter 32 "    EXP_WIDTH  $end
+$var parameter 32 #    SIG_WIDTH  $end
+$var parameter 32 $    BIAS  $end
+$var parameter 32 %    SHAMT_WIDTH  $end
+$var parameter 32 &    CLA_GRP_WIDTH  $end
+$var parameter 32 '    N_CLA_GROUPS  $end
+$var parameter 32 (    ADDER_WIDTH  $end
+$var parameter 32 )    code_NaN  $end
+$var parameter 32 *    code_PINF  $end
+$var parameter 32 +    code_NINF  $end
+
+$scope module UUT $end
+$var parameter 32 ,    WIDTH  $end
+$var parameter 32 -    EXP_WIDTH  $end
+$var parameter 32 .    SIG_WIDTH  $end
+$var parameter 32 /    BIAS  $end
+$var parameter 32 0    SHAMT_WIDTH  $end
+$var parameter 32 1    CLA_GRP_WIDTH  $end
+$var parameter 32 2    N_CLA_GROUPS  $end
+$var parameter 32 3    ADDER_WIDTH  $end
+$var parameter 32 4    code_NaN  $end
+$var parameter 32 5    code_PINF  $end
+$var parameter 32 6    code_NINF  $end
+
+$scope module PACK1 $end
+$var parameter 32 7    WIDTH  $end
+$var parameter 32 8    EXP_WIDTH  $end
+$var parameter 32 9    SIG_WIDTH  $end
+$var parameter 32 :    BIAS  $end
+$var parameter 32 ;    SHAMT_WIDTH  $end
+$var parameter 32 <    CLA_GRP_WIDTH  $end
+$var parameter 32 =    N_CLA_GROUPS  $end
+$var parameter 32 >    ADDER_WIDTH  $end
+$var parameter 32 ?    code_NaN  $end
+$var parameter 32 @    code_PINF  $end
+$var parameter 32 A    code_NINF  $end
+$upscope $end
+
+
+$scope module PACK2 $end
+$var parameter 32 B    WIDTH  $end
+$var parameter 32 C    EXP_WIDTH  $end
+$var parameter 32 D    SIG_WIDTH  $end
+$var parameter 32 E    BIAS  $end
+$var parameter 32 F    SHAMT_WIDTH  $end
+$var parameter 32 G    CLA_GRP_WIDTH  $end
+$var parameter 32 H    N_CLA_GROUPS  $end
+$var parameter 32 I    ADDER_WIDTH  $end
+$var parameter 32 J    code_NaN  $end
+$var parameter 32 K    code_PINF  $end
+$var parameter 32 L    code_NINF  $end
+$upscope $end
+
+
+$scope module PACK3 $end
+$var parameter 32 M    WIDTH  $end
+$var parameter 32 N    EXP_WIDTH  $end
+$var parameter 32 O    SIG_WIDTH  $end
+$var parameter 32 P    BIAS  $end
+$var parameter 32 Q    SHAMT_WIDTH  $end
+$var parameter 32 R    CLA_GRP_WIDTH  $end
+$var parameter 32 S    N_CLA_GROUPS  $end
+$var parameter 32 T    ADDER_WIDTH  $end
+$var parameter 32 U    code_NaN  $end
+$var parameter 32 V    code_PINF  $end
+$var parameter 32 W    code_NINF  $end
+$upscope $end
+
+
+$scope module PACK4 $end
+$var parameter 32 X    WIDTH  $end
+$var parameter 32 Y    EXP_WIDTH  $end
+$var parameter 32 Z    SIG_WIDTH  $end
+$var parameter 32 [    BIAS  $end
+$var parameter 32 \    SHAMT_WIDTH  $end
+$var parameter 32 ]    CLA_GRP_WIDTH  $end
+$var parameter 32 ^    N_CLA_GROUPS  $end
+$var parameter 32 _    ADDER_WIDTH  $end
+$var parameter 32 `    code_NaN  $end
+$var parameter 32 a    code_PINF  $end
+$var parameter 32 b    code_NINF  $end
+$upscope $end
+
+
+$scope module PACK5 $end
+$var parameter 32 c    WIDTH  $end
+$var parameter 32 d    EXP_WIDTH  $end
+$var parameter 32 e    SIG_WIDTH  $end
+$var parameter 32 f    BIAS  $end
+$var parameter 32 g    SHAMT_WIDTH  $end
+$var parameter 32 h    CLA_GRP_WIDTH  $end
+$var parameter 32 i    N_CLA_GROUPS  $end
+$var parameter 32 j    ADDER_WIDTH  $end
+$var parameter 32 k    code_NaN  $end
+$var parameter 32 l    code_PINF  $end
+$var parameter 32 m    code_NINF  $end
+$upscope $end
+
+
+$scope module PACK6 $end
+$var parameter 32 n    WIDTH  $end
+$var parameter 32 o    EXP_WIDTH  $end
+$var parameter 32 p    SIG_WIDTH  $end
+$var parameter 32 q    BIAS  $end
+$var parameter 32 r    SHAMT_WIDTH  $end
+$var parameter 32 s    CLA_GRP_WIDTH  $end
+$var parameter 32 t    N_CLA_GROUPS  $end
+$var parameter 32 u    ADDER_WIDTH  $end
+$var parameter 32 v    code_NaN  $end
+$var parameter 32 w    code_PINF  $end
+$var parameter 32 x    code_NINF  $end
+$upscope $end
+
+
+$scope module PACK7 $end
+$var parameter 32 y    WIDTH  $end
+$var parameter 32 z    EXP_WIDTH  $end
+$var parameter 32 {    SIG_WIDTH  $end
+$var parameter 32 |    BIAS  $end
+$var parameter 32 }    SHAMT_WIDTH  $end
+$var parameter 32 ~    CLA_GRP_WIDTH  $end
+$var parameter 32 !!   N_CLA_GROUPS  $end
+$var parameter 32 "!   ADDER_WIDTH  $end
+$var parameter 32 #!   code_NaN  $end
+$var parameter 32 $!   code_PINF  $end
+$var parameter 32 %!   code_NINF  $end
+$upscope $end
+
+
+$scope module EC $end
+$var parameter 32 &!   WIDTH  $end
+$var parameter 32 '!   EXP_WIDTH  $end
+$var parameter 32 (!   SIG_WIDTH  $end
+$var parameter 32 )!   BIAS  $end
+$var parameter 32 *!   SHAMT_WIDTH  $end
+$var parameter 32 +!   CLA_GRP_WIDTH  $end
+$var parameter 32 ,!   N_CLA_GROUPS  $end
+$var parameter 32 -!   ADDER_WIDTH  $end
+$var parameter 32 .!   code_NaN  $end
+$var parameter 32 /!   code_PINF  $end
+$var parameter 32 0!   code_NINF  $end
+$upscope $end
+
+
+$scope module ALGN $end
+$var parameter 32 1!   WIDTH  $end
+$var parameter 32 2!   EXP_WIDTH  $end
+$var parameter 32 3!   SIG_WIDTH  $end
+$var parameter 32 4!   BIAS  $end
+$var parameter 32 5!   SHAMT_WIDTH  $end
+$var parameter 32 6!   CLA_GRP_WIDTH  $end
+$var parameter 32 7!   N_CLA_GROUPS  $end
+$var parameter 32 8!   ADDER_WIDTH  $end
+$var parameter 32 9!   code_NaN  $end
+$var parameter 32 :!   code_PINF  $end
+$var parameter 32 ;!   code_NINF  $end
+$upscope $end
+
+
+$scope module multp_1 $end
+$var parameter 32 <!   a_width  $end
+$var parameter 32 =!   b_width  $end
+$var parameter 32 >!   out_width  $end
+$upscope $end
+
+
+$scope module multp_2 $end
+$var parameter 32 ?!   a_width  $end
+$var parameter 32 @!   b_width  $end
+$var parameter 32 A!   out_width  $end
+$upscope $end
+
+
+$scope module multp_3 $end
+$var parameter 32 B!   a_width  $end
+$var parameter 32 C!   b_width  $end
+$var parameter 32 D!   out_width  $end
+$upscope $end
+
+
+$scope module multp_4 $end
+$var parameter 32 E!   a_width  $end
+$var parameter 32 F!   b_width  $end
+$var parameter 32 G!   out_width  $end
+$upscope $end
+
+
+$scope module multp_5 $end
+$var parameter 32 H!   a_width  $end
+$var parameter 32 I!   b_width  $end
+$var parameter 32 J!   out_width  $end
+$upscope $end
+
+
+$scope module multp_6 $end
+$var parameter 32 K!   a_width  $end
+$var parameter 32 L!   b_width  $end
+$var parameter 32 M!   out_width  $end
+$upscope $end
+
+
+$scope module multp_7 $end
+$var parameter 32 N!   a_width  $end
+$var parameter 32 O!   b_width  $end
+$var parameter 32 P!   out_width  $end
+$upscope $end
+
+
+$scope module multp_8 $end
+$var parameter 32 Q!   a_width  $end
+$var parameter 32 R!   b_width  $end
+$var parameter 32 S!   out_width  $end
+$upscope $end
+
+
+$scope module multp_9 $end
+$var parameter 32 T!   a_width  $end
+$var parameter 32 U!   b_width  $end
+$var parameter 32 V!   out_width  $end
+$upscope $end
+
+
+$scope module mul_shift $end
+$var parameter 32 W!   WIDTH  $end
+$var parameter 32 X!   EXP_WIDTH  $end
+$var parameter 32 Y!   SIG_WIDTH  $end
+$var parameter 32 Z!   BIAS  $end
+$var parameter 32 [!   SHAMT_WIDTH  $end
+$var parameter 32 \!   CLA_GRP_WIDTH  $end
+$var parameter 32 ]!   N_CLA_GROUPS  $end
+$var parameter 32 ^!   ADDER_WIDTH  $end
+$var parameter 32 _!   code_NaN  $end
+$var parameter 32 `!   code_PINF  $end
+$var parameter 32 a!   code_NINF  $end
+
+$scope module u1 $end
+$var parameter 32 b!   WIDTH  $end
+$var parameter 32 c!   EXP_WIDTH  $end
+$var parameter 32 d!   SIG_WIDTH  $end
+$var parameter 32 e!   BIAS  $end
+$var parameter 32 f!   SHAMT_WIDTH  $end
+$var parameter 32 g!   CLA_GRP_WIDTH  $end
+$var parameter 32 h!   N_CLA_GROUPS  $end
+$var parameter 32 i!   ADDER_WIDTH  $end
+$var parameter 32 j!   code_NaN  $end
+$var parameter 32 k!   code_PINF  $end
+$var parameter 32 l!   code_NINF  $end
+$upscope $end
+
+
+$scope module u2 $end
+$var parameter 32 m!   WIDTH  $end
+$var parameter 32 n!   EXP_WIDTH  $end
+$var parameter 32 o!   SIG_WIDTH  $end
+$var parameter 32 p!   BIAS  $end
+$var parameter 32 q!   SHAMT_WIDTH  $end
+$var parameter 32 r!   CLA_GRP_WIDTH  $end
+$var parameter 32 s!   N_CLA_GROUPS  $end
+$var parameter 32 t!   ADDER_WIDTH  $end
+$var parameter 32 u!   code_NaN  $end
+$var parameter 32 v!   code_PINF  $end
+$var parameter 32 w!   code_NINF  $end
+$upscope $end
+
+
+$scope module u3 $end
+$var parameter 32 x!   WIDTH  $end
+$var parameter 32 y!   EXP_WIDTH  $end
+$var parameter 32 z!   SIG_WIDTH  $end
+$var parameter 32 {!   BIAS  $end
+$var parameter 32 |!   SHAMT_WIDTH  $end
+$var parameter 32 }!   CLA_GRP_WIDTH  $end
+$var parameter 32 ~!   N_CLA_GROUPS  $end
+$var parameter 32 !"   ADDER_WIDTH  $end
+$var parameter 32 ""   code_NaN  $end
+$var parameter 32 #"   code_PINF  $end
+$var parameter 32 $"   code_NINF  $end
+$upscope $end
+
+
+$scope module u4 $end
+$var parameter 32 %"   WIDTH  $end
+$var parameter 32 &"   EXP_WIDTH  $end
+$var parameter 32 '"   SIG_WIDTH  $end
+$var parameter 32 ("   BIAS  $end
+$var parameter 32 )"   SHAMT_WIDTH  $end
+$var parameter 32 *"   CLA_GRP_WIDTH  $end
+$var parameter 32 +"   N_CLA_GROUPS  $end
+$var parameter 32 ,"   ADDER_WIDTH  $end
+$var parameter 32 -"   code_NaN  $end
+$var parameter 32 ."   code_PINF  $end
+$var parameter 32 /"   code_NINF  $end
+$upscope $end
+
+
+$scope module u5 $end
+$var parameter 32 0"   WIDTH  $end
+$var parameter 32 1"   EXP_WIDTH  $end
+$var parameter 32 2"   SIG_WIDTH  $end
+$var parameter 32 3"   BIAS  $end
+$var parameter 32 4"   SHAMT_WIDTH  $end
+$var parameter 32 5"   CLA_GRP_WIDTH  $end
+$var parameter 32 6"   N_CLA_GROUPS  $end
+$var parameter 32 7"   ADDER_WIDTH  $end
+$var parameter 32 8"   code_NaN  $end
+$var parameter 32 9"   code_PINF  $end
+$var parameter 32 :"   code_NINF  $end
+$upscope $end
+
+
+$scope module u6 $end
+$var parameter 32 ;"   WIDTH  $end
+$var parameter 32 <"   EXP_WIDTH  $end
+$var parameter 32 ="   SIG_WIDTH  $end
+$var parameter 32 >"   BIAS  $end
+$var parameter 32 ?"   SHAMT_WIDTH  $end
+$var parameter 32 @"   CLA_GRP_WIDTH  $end
+$var parameter 32 A"   N_CLA_GROUPS  $end
+$var parameter 32 B"   ADDER_WIDTH  $end
+$var parameter 32 C"   code_NaN  $end
+$var parameter 32 D"   code_PINF  $end
+$var parameter 32 E"   code_NINF  $end
+$upscope $end
+
+
+$scope module u7 $end
+$var parameter 32 F"   WIDTH  $end
+$var parameter 32 G"   EXP_WIDTH  $end
+$var parameter 32 H"   SIG_WIDTH  $end
+$var parameter 32 I"   BIAS  $end
+$var parameter 32 J"   SHAMT_WIDTH  $end
+$var parameter 32 K"   CLA_GRP_WIDTH  $end
+$var parameter 32 L"   N_CLA_GROUPS  $end
+$var parameter 32 M"   ADDER_WIDTH  $end
+$var parameter 32 N"   code_NaN  $end
+$var parameter 32 O"   code_PINF  $end
+$var parameter 32 P"   code_NINF  $end
+$upscope $end
+
+
+$scope module u8 $end
+$var parameter 32 Q"   WIDTH  $end
+$var parameter 32 R"   EXP_WIDTH  $end
+$var parameter 32 S"   SIG_WIDTH  $end
+$var parameter 32 T"   BIAS  $end
+$var parameter 32 U"   SHAMT_WIDTH  $end
+$var parameter 32 V"   CLA_GRP_WIDTH  $end
+$var parameter 32 W"   N_CLA_GROUPS  $end
+$var parameter 32 X"   ADDER_WIDTH  $end
+$var parameter 32 Y"   code_NaN  $end
+$var parameter 32 Z"   code_PINF  $end
+$var parameter 32 ["   code_NINF  $end
+$upscope $end
+
+
+$scope module u9 $end
+$var parameter 32 \"   WIDTH  $end
+$var parameter 32 ]"   EXP_WIDTH  $end
+$var parameter 32 ^"   SIG_WIDTH  $end
+$var parameter 32 _"   BIAS  $end
+$var parameter 32 `"   SHAMT_WIDTH  $end
+$var parameter 32 a"   CLA_GRP_WIDTH  $end
+$var parameter 32 b"   N_CLA_GROUPS  $end
+$var parameter 32 c"   ADDER_WIDTH  $end
+$var parameter 32 d"   code_NaN  $end
+$var parameter 32 e"   code_PINF  $end
+$var parameter 32 f"   code_NINF  $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module add $end
+$var parameter 32 g"   WIDTH  $end
+$var parameter 32 h"   EXP_WIDTH  $end
+$var parameter 32 i"   SIG_WIDTH  $end
+$var parameter 32 j"   BIAS  $end
+$var parameter 32 k"   SHAMT_WIDTH  $end
+$var parameter 32 l"   CLA_GRP_WIDTH  $end
+$var parameter 32 m"   N_CLA_GROUPS  $end
+$var parameter 32 n"   ADDER_WIDTH  $end
+$var parameter 32 o"   code_NaN  $end
+$var parameter 32 p"   code_PINF  $end
+$var parameter 32 q"   code_NINF  $end
+
+$scope module SAD1 $end
+$var parameter 32 r"   SIG_WIDTH  $end
+
+$scope begin genblk1[0] $end
+$var parameter 32 s"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[1] $end
+$var parameter 32 t"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[2] $end
+$var parameter 32 u"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[3] $end
+$var parameter 32 v"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[4] $end
+$var parameter 32 w"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[5] $end
+$var parameter 32 x"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[6] $end
+$var parameter 32 y"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[7] $end
+$var parameter 32 z"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[8] $end
+$var parameter 32 {"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[9] $end
+$var parameter 32 |"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[10] $end
+$var parameter 32 }"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[11] $end
+$var parameter 32 ~"   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[12] $end
+$var parameter 32 !#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[13] $end
+$var parameter 32 "#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[14] $end
+$var parameter 32 ##   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[15] $end
+$var parameter 32 $#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[16] $end
+$var parameter 32 %#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[17] $end
+$var parameter 32 &#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[18] $end
+$var parameter 32 '#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[19] $end
+$var parameter 32 (#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[20] $end
+$var parameter 32 )#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[21] $end
+$var parameter 32 *#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[22] $end
+$var parameter 32 +#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[23] $end
+$var parameter 32 ,#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[24] $end
+$var parameter 32 -#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[25] $end
+$var parameter 32 .#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[26] $end
+$var parameter 32 /#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[27] $end
+$var parameter 32 0#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[28] $end
+$var parameter 32 1#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[29] $end
+$var parameter 32 2#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[30] $end
+$var parameter 32 3#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[31] $end
+$var parameter 32 4#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[32] $end
+$var parameter 32 5#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[33] $end
+$var parameter 32 6#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[34] $end
+$var parameter 32 7#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[35] $end
+$var parameter 32 8#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[36] $end
+$var parameter 32 9#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[37] $end
+$var parameter 32 :#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[38] $end
+$var parameter 32 ;#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[39] $end
+$var parameter 32 <#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[40] $end
+$var parameter 32 =#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[41] $end
+$var parameter 32 >#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[42] $end
+$var parameter 32 ?#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[43] $end
+$var parameter 32 @#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[44] $end
+$var parameter 32 A#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[45] $end
+$var parameter 32 B#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[46] $end
+$var parameter 32 C#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[47] $end
+$var parameter 32 D#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[48] $end
+$var parameter 32 E#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[49] $end
+$var parameter 32 F#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[50] $end
+$var parameter 32 G#   i [31:0] $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module SAD2 $end
+$var parameter 32 H#   SIG_WIDTH  $end
+
+$scope begin genblk1[0] $end
+$var parameter 32 I#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[1] $end
+$var parameter 32 J#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[2] $end
+$var parameter 32 K#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[3] $end
+$var parameter 32 L#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[4] $end
+$var parameter 32 M#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[5] $end
+$var parameter 32 N#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[6] $end
+$var parameter 32 O#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[7] $end
+$var parameter 32 P#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[8] $end
+$var parameter 32 Q#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[9] $end
+$var parameter 32 R#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[10] $end
+$var parameter 32 S#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[11] $end
+$var parameter 32 T#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[12] $end
+$var parameter 32 U#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[13] $end
+$var parameter 32 V#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[14] $end
+$var parameter 32 W#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[15] $end
+$var parameter 32 X#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[16] $end
+$var parameter 32 Y#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[17] $end
+$var parameter 32 Z#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[18] $end
+$var parameter 32 [#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[19] $end
+$var parameter 32 \#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[20] $end
+$var parameter 32 ]#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[21] $end
+$var parameter 32 ^#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[22] $end
+$var parameter 32 _#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[23] $end
+$var parameter 32 `#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[24] $end
+$var parameter 32 a#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[25] $end
+$var parameter 32 b#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[26] $end
+$var parameter 32 c#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[27] $end
+$var parameter 32 d#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[28] $end
+$var parameter 32 e#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[29] $end
+$var parameter 32 f#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[30] $end
+$var parameter 32 g#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[31] $end
+$var parameter 32 h#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[32] $end
+$var parameter 32 i#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[33] $end
+$var parameter 32 j#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[34] $end
+$var parameter 32 k#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[35] $end
+$var parameter 32 l#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[36] $end
+$var parameter 32 m#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[37] $end
+$var parameter 32 n#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[38] $end
+$var parameter 32 o#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[39] $end
+$var parameter 32 p#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[40] $end
+$var parameter 32 q#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[41] $end
+$var parameter 32 r#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[42] $end
+$var parameter 32 s#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[43] $end
+$var parameter 32 t#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[44] $end
+$var parameter 32 u#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[45] $end
+$var parameter 32 v#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[46] $end
+$var parameter 32 w#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[47] $end
+$var parameter 32 x#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[48] $end
+$var parameter 32 y#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[49] $end
+$var parameter 32 z#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[50] $end
+$var parameter 32 {#   i [31:0] $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module SAD3 $end
+$var parameter 32 |#   SIG_WIDTH  $end
+
+$scope begin genblk1[0] $end
+$var parameter 32 }#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[1] $end
+$var parameter 32 ~#   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[2] $end
+$var parameter 32 !$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[3] $end
+$var parameter 32 "$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[4] $end
+$var parameter 32 #$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[5] $end
+$var parameter 32 $$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[6] $end
+$var parameter 32 %$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[7] $end
+$var parameter 32 &$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[8] $end
+$var parameter 32 '$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[9] $end
+$var parameter 32 ($   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[10] $end
+$var parameter 32 )$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[11] $end
+$var parameter 32 *$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[12] $end
+$var parameter 32 +$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[13] $end
+$var parameter 32 ,$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[14] $end
+$var parameter 32 -$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[15] $end
+$var parameter 32 .$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[16] $end
+$var parameter 32 /$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[17] $end
+$var parameter 32 0$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[18] $end
+$var parameter 32 1$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[19] $end
+$var parameter 32 2$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[20] $end
+$var parameter 32 3$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[21] $end
+$var parameter 32 4$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[22] $end
+$var parameter 32 5$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[23] $end
+$var parameter 32 6$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[24] $end
+$var parameter 32 7$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[25] $end
+$var parameter 32 8$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[26] $end
+$var parameter 32 9$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[27] $end
+$var parameter 32 :$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[28] $end
+$var parameter 32 ;$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[29] $end
+$var parameter 32 <$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[30] $end
+$var parameter 32 =$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[31] $end
+$var parameter 32 >$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[32] $end
+$var parameter 32 ?$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[33] $end
+$var parameter 32 @$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[34] $end
+$var parameter 32 A$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[35] $end
+$var parameter 32 B$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[36] $end
+$var parameter 32 C$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[37] $end
+$var parameter 32 D$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[38] $end
+$var parameter 32 E$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[39] $end
+$var parameter 32 F$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[40] $end
+$var parameter 32 G$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[41] $end
+$var parameter 32 H$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[42] $end
+$var parameter 32 I$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[43] $end
+$var parameter 32 J$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[44] $end
+$var parameter 32 K$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[45] $end
+$var parameter 32 L$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[46] $end
+$var parameter 32 M$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[47] $end
+$var parameter 32 N$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[48] $end
+$var parameter 32 O$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[49] $end
+$var parameter 32 P$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[50] $end
+$var parameter 32 Q$   i [31:0] $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module SAD4 $end
+$var parameter 32 R$   SIG_WIDTH  $end
+
+$scope begin genblk1[0] $end
+$var parameter 32 S$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[1] $end
+$var parameter 32 T$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[2] $end
+$var parameter 32 U$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[3] $end
+$var parameter 32 V$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[4] $end
+$var parameter 32 W$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[5] $end
+$var parameter 32 X$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[6] $end
+$var parameter 32 Y$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[7] $end
+$var parameter 32 Z$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[8] $end
+$var parameter 32 [$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[9] $end
+$var parameter 32 \$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[10] $end
+$var parameter 32 ]$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[11] $end
+$var parameter 32 ^$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[12] $end
+$var parameter 32 _$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[13] $end
+$var parameter 32 `$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[14] $end
+$var parameter 32 a$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[15] $end
+$var parameter 32 b$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[16] $end
+$var parameter 32 c$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[17] $end
+$var parameter 32 d$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[18] $end
+$var parameter 32 e$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[19] $end
+$var parameter 32 f$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[20] $end
+$var parameter 32 g$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[21] $end
+$var parameter 32 h$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[22] $end
+$var parameter 32 i$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[23] $end
+$var parameter 32 j$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[24] $end
+$var parameter 32 k$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[25] $end
+$var parameter 32 l$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[26] $end
+$var parameter 32 m$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[27] $end
+$var parameter 32 n$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[28] $end
+$var parameter 32 o$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[29] $end
+$var parameter 32 p$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[30] $end
+$var parameter 32 q$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[31] $end
+$var parameter 32 r$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[32] $end
+$var parameter 32 s$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[33] $end
+$var parameter 32 t$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[34] $end
+$var parameter 32 u$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[35] $end
+$var parameter 32 v$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[36] $end
+$var parameter 32 w$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[37] $end
+$var parameter 32 x$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[38] $end
+$var parameter 32 y$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[39] $end
+$var parameter 32 z$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[40] $end
+$var parameter 32 {$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[41] $end
+$var parameter 32 |$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[42] $end
+$var parameter 32 }$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[43] $end
+$var parameter 32 ~$   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[44] $end
+$var parameter 32 !%   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[45] $end
+$var parameter 32 "%   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[46] $end
+$var parameter 32 #%   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[47] $end
+$var parameter 32 $%   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[48] $end
+$var parameter 32 %%   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[49] $end
+$var parameter 32 &%   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[50] $end
+$var parameter 32 '%   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[51] $end
+$var parameter 32 (%   i [31:0] $end
+$upscope $end
+
+
+$scope begin genblk1[52] $end
+$var parameter 32 )%   i [31:0] $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+
+$scope module compress_group $end
+$var parameter 32 *%   GRP_WIDTH  $end
+$upscope $end
+
+
+$scope module lzc $end
+$var parameter 32 +%   WIDTH  $end
+$var parameter 32 ,%   EXP_WIDTH  $end
+$var parameter 32 -%   SIG_WIDTH  $end
+$var parameter 32 .%   BIAS  $end
+$var parameter 32 /%   SHAMT_WIDTH  $end
+$var parameter 32 0%   CLA_GRP_WIDTH  $end
+$var parameter 32 1%   N_CLA_GROUPS  $end
+$var parameter 32 2%   ADDER_WIDTH  $end
+$var parameter 32 3%   code_NaN  $end
+$var parameter 32 4%   code_PINF  $end
+$var parameter 32 5%   code_NINF  $end
+$upscope $end
+
+
+$scope module normalize_shift $end
+$var parameter 32 6%   WIDTH  $end
+$var parameter 32 7%   EXP_WIDTH  $end
+$var parameter 32 8%   SIG_WIDTH  $end
+$var parameter 32 9%   BIAS  $end
+$var parameter 32 :%   SHAMT_WIDTH  $end
+$var parameter 32 ;%   CLA_GRP_WIDTH  $end
+$var parameter 32 <%   N_CLA_GROUPS  $end
+$var parameter 32 =%   ADDER_WIDTH  $end
+$var parameter 32 >%   code_NaN  $end
+$var parameter 32 ?%   code_PINF  $end
+$var parameter 32 @%   code_NINF  $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b11111111100000000000000000000000 @%
+b1111111100000000000000000000000 ?%
+b1111111110000000000000000000000 >%
+b110010 =%
+b10 <%
+b11001 ;%
+b110 :%
+b1111111 9%
+b10111 8%
+b1000 7%
+b100000 6%
+b11111111100000000000000000000000 5%
+b1111111100000000000000000000000 4%
+b1111111110000000000000000000000 3%
+b110010 2%
+b10 1%
+b11001 0%
+b110 /%
+b1111111 .%
+b10111 -%
+b1000 ,%
+b100000 +%
+b1001111 *%
+b110100 )%
+b110011 (%
+b110010 '%
+b110001 &%
+b110000 %%
+b101111 $%
+b101110 #%
+b101101 "%
+b101100 !%
+b101011 ~$
+b101010 }$
+b101001 |$
+b101000 {$
+b100111 z$
+b100110 y$
+b100101 x$
+b100100 w$
+b100011 v$
+b100010 u$
+b100001 t$
+b100000 s$
+b11111 r$
+b11110 q$
+b11101 p$
+b11100 o$
+b11011 n$
+b11010 m$
+b11001 l$
+b11000 k$
+b10111 j$
+b10110 i$
+b10101 h$
+b10100 g$
+b10011 f$
+b10010 e$
+b10001 d$
+b10000 c$
+b1111 b$
+b1110 a$
+b1101 `$
+b1100 _$
+b1011 ^$
+b1010 ]$
+b1001 \$
+b1000 [$
+b111 Z$
+b110 Y$
+b101 X$
+b100 W$
+b11 V$
+b10 U$
+b1 T$
+b0 S$
+b11000 R$
+b110010 Q$
+b110001 P$
+b110000 O$
+b101111 N$
+b101110 M$
+b101101 L$
+b101100 K$
+b101011 J$
+b101010 I$
+b101001 H$
+b101000 G$
+b100111 F$
+b100110 E$
+b100101 D$
+b100100 C$
+b100011 B$
+b100010 A$
+b100001 @$
+b100000 ?$
+b11111 >$
+b11110 =$
+b11101 <$
+b11100 ;$
+b11011 :$
+b11010 9$
+b11001 8$
+b11000 7$
+b10111 6$
+b10110 5$
+b10101 4$
+b10100 3$
+b10011 2$
+b10010 1$
+b10001 0$
+b10000 /$
+b1111 .$
+b1110 -$
+b1101 ,$
+b1100 +$
+b1011 *$
+b1010 )$
+b1001 ($
+b1000 '$
+b111 &$
+b110 %$
+b101 $$
+b100 #$
+b11 "$
+b10 !$
+b1 ~#
+b0 }#
+b10111 |#
+b110010 {#
+b110001 z#
+b110000 y#
+b101111 x#
+b101110 w#
+b101101 v#
+b101100 u#
+b101011 t#
+b101010 s#
+b101001 r#
+b101000 q#
+b100111 p#
+b100110 o#
+b100101 n#
+b100100 m#
+b100011 l#
+b100010 k#
+b100001 j#
+b100000 i#
+b11111 h#
+b11110 g#
+b11101 f#
+b11100 e#
+b11011 d#
+b11010 c#
+b11001 b#
+b11000 a#
+b10111 `#
+b10110 _#
+b10101 ^#
+b10100 ]#
+b10011 \#
+b10010 [#
+b10001 Z#
+b10000 Y#
+b1111 X#
+b1110 W#
+b1101 V#
+b1100 U#
+b1011 T#
+b1010 S#
+b1001 R#
+b1000 Q#
+b111 P#
+b110 O#
+b101 N#
+b100 M#
+b11 L#
+b10 K#
+b1 J#
+b0 I#
+b10111 H#
+b110010 G#
+b110001 F#
+b110000 E#
+b101111 D#
+b101110 C#
+b101101 B#
+b101100 A#
+b101011 @#
+b101010 ?#
+b101001 >#
+b101000 =#
+b100111 <#
+b100110 ;#
+b100101 :#
+b100100 9#
+b100011 8#
+b100010 7#
+b100001 6#
+b100000 5#
+b11111 4#
+b11110 3#
+b11101 2#
+b11100 1#
+b11011 0#
+b11010 /#
+b11001 .#
+b11000 -#
+b10111 ,#
+b10110 +#
+b10101 *#
+b10100 )#
+b10011 (#
+b10010 '#
+b10001 &#
+b10000 %#
+b1111 $#
+b1110 ##
+b1101 "#
+b1100 !#
+b1011 ~"
+b1010 }"
+b1001 |"
+b1000 {"
+b111 z"
+b110 y"
+b101 x"
+b100 w"
+b11 v"
+b10 u"
+b1 t"
+b0 s"
+b10111 r"
+b11111111100000000000000000000000 q"
+b1111111100000000000000000000000 p"
+b1111111110000000000000000000000 o"
+b110010 n"
+b10 m"
+b11001 l"
+b110 k"
+b1111111 j"
+b10111 i"
+b1000 h"
+b100000 g"
+b11111111100000000000000000000000 f"
+b1111111100000000000000000000000 e"
+b1111111110000000000000000000000 d"
+b110010 c"
+b10 b"
+b11001 a"
+b110 `"
+b1111111 _"
+b10111 ^"
+b1000 ]"
+b100000 \"
+b11111111100000000000000000000000 ["
+b1111111100000000000000000000000 Z"
+b1111111110000000000000000000000 Y"
+b110010 X"
+b10 W"
+b11001 V"
+b110 U"
+b1111111 T"
+b10111 S"
+b1000 R"
+b100000 Q"
+b11111111100000000000000000000000 P"
+b1111111100000000000000000000000 O"
+b1111111110000000000000000000000 N"
+b110010 M"
+b10 L"
+b11001 K"
+b110 J"
+b1111111 I"
+b10111 H"
+b1000 G"
+b100000 F"
+b11111111100000000000000000000000 E"
+b1111111100000000000000000000000 D"
+b1111111110000000000000000000000 C"
+b110010 B"
+b10 A"
+b11001 @"
+b110 ?"
+b1111111 >"
+b10111 ="
+b1000 <"
+b100000 ;"
+b11111111100000000000000000000000 :"
+b1111111100000000000000000000000 9"
+b1111111110000000000000000000000 8"
+b110010 7"
+b10 6"
+b11001 5"
+b110 4"
+b1111111 3"
+b10111 2"
+b1000 1"
+b100000 0"
+b11111111100000000000000000000000 /"
+b1111111100000000000000000000000 ."
+b1111111110000000000000000000000 -"
+b110010 ,"
+b10 +"
+b11001 *"
+b110 )"
+b1111111 ("
+b10111 '"
+b1000 &"
+b100000 %"
+b11111111100000000000000000000000 $"
+b1111111100000000000000000000000 #"
+b1111111110000000000000000000000 ""
+b110010 !"
+b10 ~!
+b11001 }!
+b110 |!
+b1111111 {!
+b10111 z!
+b1000 y!
+b100000 x!
+b11111111100000000000000000000000 w!
+b1111111100000000000000000000000 v!
+b1111111110000000000000000000000 u!
+b110010 t!
+b10 s!
+b11001 r!
+b110 q!
+b1111111 p!
+b10111 o!
+b1000 n!
+b100000 m!
+b11111111100000000000000000000000 l!
+b1111111100000000000000000000000 k!
+b1111111110000000000000000000000 j!
+b110010 i!
+b10 h!
+b11001 g!
+b110 f!
+b1111111 e!
+b10111 d!
+b1000 c!
+b100000 b!
+b11111111100000000000000000000000 a!
+b1111111100000000000000000000000 `!
+b1111111110000000000000000000000 _!
+b110010 ^!
+b10 ]!
+b11001 \!
+b110 [!
+b1111111 Z!
+b10111 Y!
+b1000 X!
+b100000 W!
+b110000 V!
+b11000 U!
+b11000 T!
+b110000 S!
+b11000 R!
+b11000 Q!
+b110000 P!
+b11000 O!
+b11000 N!
+b110000 M!
+b11000 L!
+b11000 K!
+b110000 J!
+b11000 I!
+b11000 H!
+b110000 G!
+b11000 F!
+b11000 E!
+b110000 D!
+b11000 C!
+b11000 B!
+b110000 A!
+b11000 @!
+b11000 ?!
+b110000 >!
+b11000 =!
+b11000 <!
+b11111111100000000000000000000000 ;!
+b1111111100000000000000000000000 :!
+b1111111110000000000000000000000 9!
+b110010 8!
+b10 7!
+b11001 6!
+b110 5!
+b1111111 4!
+b10111 3!
+b1000 2!
+b100000 1!
+b11111111100000000000000000000000 0!
+b1111111100000000000000000000000 /!
+b1111111110000000000000000000000 .!
+b110010 -!
+b10 ,!
+b11001 +!
+b110 *!
+b1111111 )!
+b10111 (!
+b1000 '!
+b100000 &!
+b11111111100000000000000000000000 %!
+b1111111100000000000000000000000 $!
+b1111111110000000000000000000000 #!
+b110010 "!
+b10 !!
+b11001 ~
+b110 }
+b1111111 |
+b10111 {
+b1000 z
+b100000 y
+b11111111100000000000000000000000 x
+b1111111100000000000000000000000 w
+b1111111110000000000000000000000 v
+b110010 u
+b10 t
+b11001 s
+b110 r
+b1111111 q
+b10111 p
+b1000 o
+b100000 n
+b11111111100000000000000000000000 m
+b1111111100000000000000000000000 l
+b1111111110000000000000000000000 k
+b110010 j
+b10 i
+b11001 h
+b110 g
+b1111111 f
+b10111 e
+b1000 d
+b100000 c
+b11111111100000000000000000000000 b
+b1111111100000000000000000000000 a
+b1111111110000000000000000000000 `
+b110010 _
+b10 ^
+b11001 ]
+b110 \
+b1111111 [
+b10111 Z
+b1000 Y
+b100000 X
+b11111111100000000000000000000000 W
+b1111111100000000000000000000000 V
+b1111111110000000000000000000000 U
+b110010 T
+b10 S
+b11001 R
+b110 Q
+b1111111 P
+b10111 O
+b1000 N
+b100000 M
+b11111111100000000000000000000000 L
+b1111111100000000000000000000000 K
+b1111111110000000000000000000000 J
+b110010 I
+b10 H
+b11001 G
+b110 F
+b1111111 E
+b10111 D
+b1000 C
+b100000 B
+b11111111100000000000000000000000 A
+b1111111100000000000000000000000 @
+b1111111110000000000000000000000 ?
+b110010 >
+b10 =
+b11001 <
+b110 ;
+b1111111 :
+b10111 9
+b1000 8
+b100000 7
+b11111111100000000000000000000000 6
+b1111111100000000000000000000000 5
+b1111111110000000000000000000000 4
+b110010 3
+b10 2
+b11001 1
+b110 0
+b1111111 /
+b10111 .
+b1000 -
+b100000 ,
+b11111111100000000000000000000000 +
+b1111111100000000000000000000000 *
+b1111111110000000000000000000000 )
+b110010 (
+b10 '
+b11001 &
+b110 %
+b1111111 $
+b10111 #
+b1000 "
+b100000 !
+$end
+#100000

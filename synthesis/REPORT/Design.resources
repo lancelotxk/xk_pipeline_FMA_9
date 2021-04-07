@@ -1,0 +1,40 @@
+Warning: Design 'fpfma_pipeline' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Mon Apr  5 14:52:46 2021
+****************************************
+
+Resource Sharing Report for design fpfma_pipeline in file
+        ../src/verilog/fpfma_pipeline.v
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r405     | DW_cmp       | width=32   |               | ne_152               |
+| r407     | DW_cmp       | width=32   |               | ne_152_2             |
+| r409     | DW_cmp       | width=32   |               | ne_152_3             |
+| r411     | DW_cmp       | width=32   |               | ne_152_4             |
+| r413     | DW_cmp       | width=32   |               | ne_152_5             |
+| r415     | DW_cmp       | width=32   |               | ne_152_6             |
+| r417     | DW_cmp       | width=32   |               | ne_152_7             |
+| r419     | DW01_inc     | width=78   |               | add_0_root_add_232_ni |
+| r421     | DW01_sub     | width=78   |               | sub_1_root_add_232_ni |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_0_root_add_232_ni                 |                    |                |
+|                    | DW01_inc         | rpl                |                |
+| sub_1_root_add_232_ni                 |                    |                |
+|                    | DW01_sub         | rpl                |                |
+===============================================================================
+
+1

@@ -1,0 +1,55 @@
+*** Message Type: info ***
+When: Mon Mar 15 15:27:59 CST 2021
+SimVision started.
+Version: TOOL:  simvision(64)   15.20-p001
+User: xukun
+Host: duli-server
+Platform: Linux/x86_64/2.6.32-696.el6.x86_64
+Started: Mon Mar 15 15:27:59 CST 2021
+Command: /usr/edatools/INCISIVE152/tools.lnx86/simvision/bin/64bit/simvision.exe fpfma.f t_fpfma.vcd
+Work Directory: /home/xukun/Documents/rtlsim
+ 
+*** Message Type: info ***
+When: Mon Mar 15 15:28:05 CST 2021
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: Mon Mar 15 15:29:15 CST 2021
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: Mon Mar 15 15:29:21 CST 2021
+Create utility window: "Properties"
+ 
+*** Message Type: error ***
+When: Mon Mar 15 15:42:28 CST 2021
+can't find node "2" in ::tree1
+    (object "::replicator::parts31" method "::replicator::Parts::run" )
+    invoked from within
+"# Compiled -- no source code available
+error "called a copy of a compiled script""
+    (procedure "replicator::capture" line 1)
+    invoked from within
+"replicator::capture $this  -as SV_WAVEFORM -items $undoids  -progresscommand [_getProgressCommand configure "Saving signals..."]"
+    (object "::.waveWindow0.work.user.waveset" method "::WaveSet::delete" body line 31)
+    invoked from within
+"$itk_component(waveset) delete "" $action $undo"
+    (object "::.waveWindow0" method "::WaveWindow::_doDelete" body line 26)
+    invoked from within
+"::.waveWindow0 _doDelete"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 _doDelete}"
+    invoked from within
+"$menu invoke $index"
+    (object "::.waveWindow0" method "::cwidgets::ToolWindow::_menu_invoke" body line 21)
+    invoked from within
+"chain $tagOrId"
+    (object "::.waveWindow0" method "::SVToolWindow::_menu_invoke" body line 15)
+    invoked from within
+"::.waveWindow0 _menu_invoke Edit>Delete"
+    (in namespace inscope "::WaveWindow" script line 1)
+    invoked from within
+"namespace inscope ::WaveWindow {::.waveWindow0 _menu_invoke Edit>Delete}"
+    (command bound to event)
+ 

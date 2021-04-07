@@ -1,0 +1,2 @@
+###
+rm -rf INCA_libs *.log *.history *.key *.shm *.err

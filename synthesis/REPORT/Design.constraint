@@ -1,0 +1,180 @@
+Warning: Design 'fpfma_pipeline' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Mon Apr  5 14:52:46 2021
+****************************************
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                               0.00       0.00
+  clock network delay (propagated)                        0.07       0.07
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)      0.00       0.07 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)       0.06       0.13 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                     0.03       0.16 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)                0.03       0.19 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)                  0.01       0.20 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)                0.02       0.22 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)                  0.04       0.26 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)                0.03       0.29 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)                 0.06       0.35 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                          0.04       0.39 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                          0.01       0.40 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                          0.02       0.42 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                          0.04       0.46 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                          0.04       0.51 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)                   0.03       0.53 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140)     0.03       0.57 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)       0.03       0.60 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                          0.03       0.63 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                          0.03       0.66 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                          0.03       0.69 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                          0.03       0.72 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140)     0.04       0.76 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140)     0.03       0.79 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                          0.04       0.83 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                          0.03       0.86 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                          0.04       0.89 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                          0.03       0.92 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                          0.03       0.95 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                          0.04       0.99 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)      0.00       0.99 r
+  data arrival time                                                  0.99
+
+  clock clk_DQS (rise edge)                               0.90       0.90
+  clock network delay (propagated)                        0.02       0.92
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140)     0.00       0.92 r
+  library setup time                                      0.02       0.95
+  data required time                                                 0.95
+  --------------------------------------------------------------------------
+  data required time                                                 0.95
+  data arrival time                                                 -0.99
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.05
+
+
+  Startpoint: pipe2/exp1_p2_reg[4]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe3/result_p3_reg[27]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_add_0_DW01_add_12
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize_DW01_sub_0_DW01_sub_22
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  normalize          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline3      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                               0.00       0.00
+  clock network delay (propagated)                        0.02       0.02
+  pipe2/exp1_p2_reg[4]/CP (DFCNQOPTSADD8BWP12T30P140)     0.00       0.02 r
+  pipe2/exp1_p2_reg[4]/Q (DFCNQOPTSADD8BWP12T30P140)      0.06       0.08 r
+  normalize_shift/sub_18_2/U2_4/S (FA1D1BWP12T30P140)     0.03       0.11 r
+  normalize_shift/U10/Z (AO22D0BWP12T30P140)              0.03       0.14 r
+  pipe3/result_p3_reg[27]/D (DFCNQOPTSADD8BWP12T30P140)
+                                                          0.00       0.14 r
+  data arrival time                                                  0.14
+
+  clock clk_DQS (rise edge)                               0.00       0.00
+  clock network delay (propagated)                        0.06       0.06
+  pipe3/result_p3_reg[27]/CP (DFCNQOPTSADD8BWP12T30P140)
+                                                          0.00       0.06 r
+  library hold time                                       0.09       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.14
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.01
+
+
+    Net: mul_shift/u3/N11
+
+    max_transition         0.10
+  - Transition Time        0.10
+  ------------------------------
+    Slack                  0.00  (MET)
+
+
+    Net: lzc/n1
+
+    max_capacitance        0.01
+  - Capacitance            0.00
+  ------------------------------
+    Slack                  0.01  (MET)
+
+
+    Net: carry_p2[0]
+
+    Capacitance            0.00
+  - min_capacitance        0.00
+  ------------------------------
+    Slack                  0.00  (VIOLATED: increase significant digits)
+
+
+Min pulse width constraints
+
+                       Required      Actual
+  Pin                pulse width   pulse width   Slack           Scenario
+--------------------------------------------------------------------------------
+  pipe3/result_p3_reg[31]/CP(high)
+                      0.13          0.45          0.31 (MET)
+
+1

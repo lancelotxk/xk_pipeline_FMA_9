@@ -1,0 +1,277 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 10
+        -max_paths 10
+Design : bitFusion
+Version: P-2019.03-SP5-4
+Date   : Fri Jan 22 18:14:58 2021
+****************************************
+
+Operating Conditions: ssg0p9v0c   Library: tcbn28hpcplusbwp12t30p140ssg0p9v0c
+Wire Load Model Mode: segmented
+
+  Startpoint: bitFusion_out_reg[19]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[19]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[19]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[19]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[19]/Z (BUFTD4BWP12T30P140)        0.017732255
+                                                                 0.058418091 r
+  bitFusion_out[19] (out)                             0.000000000
+                                                                 0.058418091 r
+  data arrival time                                              0.058418091
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[2]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[2]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[2]/CP (DFCNQD1BWP12T30P140)       0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[2]/Q (DFCNQD1BWP12T30P140)        0.040685833
+                                                                 0.040685833 r
+  bitFusion_out_tri[2]/Z (BUFTD4BWP12T30P140)         0.017979667
+                                                                 0.058665499 r
+  bitFusion_out[2] (out)                              0.000000000
+                                                                 0.058665499 r
+  data arrival time                                              0.058665499
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[18]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[18]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[18]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[18]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[18]/Z (BUFTD4BWP12T30P140)        0.018358260
+                                                                 0.059044097 r
+  bitFusion_out[18] (out)                             0.000000000
+                                                                 0.059044097 r
+  data arrival time                                              0.059044097
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[17]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[17]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[17]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[17]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[17]/Z (BUFTD4BWP12T30P140)        0.018358260
+                                                                 0.059044097 r
+  bitFusion_out[17] (out)                             0.000000000
+                                                                 0.059044097 r
+  data arrival time                                              0.059044097
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[16]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[16]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[16]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[16]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[16]/Z (BUFTD4BWP12T30P140)        0.018358260
+                                                                 0.059044097 r
+  bitFusion_out[16] (out)                             0.000000000
+                                                                 0.059044097 r
+  data arrival time                                              0.059044097
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[15]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[15]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[15]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[15]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[15]/Z (BUFTD4BWP12T30P140)        0.018358260
+                                                                 0.059044097 r
+  bitFusion_out[15] (out)                             0.000000000
+                                                                 0.059044097 r
+  data arrival time                                              0.059044097
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[14]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[14]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[14]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[14]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[14]/Z (BUFTD4BWP12T30P140)        0.018358260
+                                                                 0.059044097 r
+  bitFusion_out[14] (out)                             0.000000000
+                                                                 0.059044097 r
+  data arrival time                                              0.059044097
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[13]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[13]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[13]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[13]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[13]/Z (BUFTD4BWP12T30P140)        0.018358260
+                                                                 0.059044097 r
+  bitFusion_out[13] (out)                             0.000000000
+                                                                 0.059044097 r
+  data arrival time                                              0.059044097
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[12]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[12]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[12]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[12]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[12]/Z (BUFTD4BWP12T30P140)        0.018358260
+                                                                 0.059044097 r
+  bitFusion_out[12] (out)                             0.000000000
+                                                                 0.059044097 r
+  data arrival time                                              0.059044097
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: bitFusion_out_reg[11]
+              (rising edge-triggered flip-flop)
+  Endpoint: bitFusion_out[11]
+            (output port)
+  Path Group: (none)
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  bitFusion          ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  bitFusion_out_reg[11]/CP (DFCNQD1BWP12T30P140)      0.000000000
+                                                                 0.000000000 r
+  bitFusion_out_reg[11]/Q (DFCNQD1BWP12T30P140)       0.040685836
+                                                                 0.040685836 r
+  bitFusion_out_tri[11]/Z (BUFTD4BWP12T30P140)        0.018358260
+                                                                 0.059044097 r
+  bitFusion_out[11] (out)                             0.000000000
+                                                                 0.059044097 r
+  data arrival time                                              0.059044097
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

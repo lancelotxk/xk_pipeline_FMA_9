@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : fpfma
+Version: P-2019.03-SP5-4
+Date   : Fri Mar 26 10:01:55 2021
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p9v0c (File: /pdk/mooreelite/TSMC28HPC+/TSMC_iPDK_20170531/STD_CELL/tcbn28hpcplusbwp12t30p140_190a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp12t30p140_180a/tcbn28hpcplusbwp12t30p140ssg0p9v0c.db)
+
+Number of ports:                         2452
+Number of nets:                         15239
+Number of cells:                        10996
+Number of combinational cells:          10923
+Number of sequential cells:                72
+Number of macros/black boxes:               0
+Number of buf/inv:                       1211
+Number of references:                      49
+
+Combinational area:              10051.103848
+Buf/Inv area:                      406.895995
+Noncombinational area:             116.760003
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 10167.863851
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+fpfma                             10167.8639    100.0   4402.2719   116.7600  0.0000  fpfma
+mul_shift                          5648.8319     55.6   5648.8319     0.0000  0.0000  shifter
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+Total                                                  10051.1038   116.7600  0.0000
+
+1

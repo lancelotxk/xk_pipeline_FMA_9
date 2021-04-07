@@ -1,0 +1,1 @@
+s1(05Apr2021:14:50:01):  irun -f rtlsim.f +access+wrc -timescale 1ns/1ps +incdir+../src/verilog -top t_fpfma_pipeline 

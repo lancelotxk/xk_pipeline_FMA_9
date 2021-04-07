@@ -1,0 +1,1874 @@
+Warning: Design 'fpfma_pipeline' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Mon Apr  5 14:52:39 2021
+****************************************
+
+Library(s) Used:
+
+    tcbn28hpcplusbwp12t30p140ssg0p9v0c (File: /pdk/mooreelite/TSMC28HPC+/TSMC_iPDK_20170531/STD_CELL/tcbn28hpcplusbwp12t30p140_190a/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcbn28hpcplusbwp12t30p140_180a/tcbn28hpcplusbwp12t30p140ssg0p9v0c.db)
+
+Number of ports:                        35711
+Number of nets:                         95260
+Number of cells:                        53773
+Number of combinational cells:          50880
+Number of sequential cells:              1505
+Number of macros/black boxes:               0
+Number of buf/inv:                       8893
+Number of references:                      46
+
+Combinational area:              68076.287551
+Buf/Inv area:                     8531.543876
+Noncombinational area:           13571.375993
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 81647.663544
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------------------------
+fpfma_pipeline                    81647.6635    100.0    474.9360   2122.0080  0.0000  fpfma_pipeline
+ALGN                                324.7440      0.4    324.7440      0.0000  0.0000  align
+EC                                  858.4800      1.1    639.2400      0.0000  0.0000  exponentComparison
+EC/add_23                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_8
+EC/add_24                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_7
+EC/add_25                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_6
+EC/add_26                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_5
+EC/add_27                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_4
+EC/add_28                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_3
+EC/add_29                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_2
+EC/add_30                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_1
+EC/add_31                            24.3600      0.0     24.3600      0.0000  0.0000  exponentComparison_DW01_add_0
+PACK1                               424.5360      0.5    424.5360      0.0000  0.0000  unpack_6
+PACK2                               424.5360      0.5    424.5360      0.0000  0.0000  unpack_5
+PACK3                               424.5360      0.5    424.5360      0.0000  0.0000  unpack_4
+PACK4                               425.7120      0.5    425.7120      0.0000  0.0000  unpack_3
+PACK5                               425.7120      0.5    425.7120      0.0000  0.0000  unpack_2
+PACK6                               425.7120      0.5    425.7120      0.0000  0.0000  unpack_1
+PACK7                               391.2720      0.5    391.2720      0.0000  0.0000  unpack_0
+add                                3208.1280      3.9      0.6720      0.0000  0.0000  adder_pp
+add/SAD1                            754.6560      0.9      0.6720      0.0000  0.0000  SAD_6_2
+add/SAD1/genblk1[0].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_205
+add/SAD1/genblk1[0].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_411
+add/SAD1/genblk1[0].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_410
+add/SAD1/genblk1[0].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_823
+add/SAD1/genblk1[0].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_822
+add/SAD1/genblk1[10].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_195
+add/SAD1/genblk1[10].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_391
+add/SAD1/genblk1[10].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_390
+add/SAD1/genblk1[10].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_803
+add/SAD1/genblk1[10].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_802
+add/SAD1/genblk1[11].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_194
+add/SAD1/genblk1[11].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_389
+add/SAD1/genblk1[11].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_388
+add/SAD1/genblk1[11].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_801
+add/SAD1/genblk1[11].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_800
+add/SAD1/genblk1[12].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_193
+add/SAD1/genblk1[12].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_387
+add/SAD1/genblk1[12].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_386
+add/SAD1/genblk1[12].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_799
+add/SAD1/genblk1[12].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_798
+add/SAD1/genblk1[13].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_192
+add/SAD1/genblk1[13].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_385
+add/SAD1/genblk1[13].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_384
+add/SAD1/genblk1[13].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_797
+add/SAD1/genblk1[13].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_796
+add/SAD1/genblk1[14].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_191
+add/SAD1/genblk1[14].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_383
+add/SAD1/genblk1[14].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_382
+add/SAD1/genblk1[14].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_795
+add/SAD1/genblk1[14].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_794
+add/SAD1/genblk1[15].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_190
+add/SAD1/genblk1[15].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_381
+add/SAD1/genblk1[15].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_380
+add/SAD1/genblk1[15].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_793
+add/SAD1/genblk1[15].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_792
+add/SAD1/genblk1[16].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_189
+add/SAD1/genblk1[16].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_379
+add/SAD1/genblk1[16].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_378
+add/SAD1/genblk1[16].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_791
+add/SAD1/genblk1[16].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_790
+add/SAD1/genblk1[17].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_188
+add/SAD1/genblk1[17].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_377
+add/SAD1/genblk1[17].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_376
+add/SAD1/genblk1[17].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_789
+add/SAD1/genblk1[17].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_788
+add/SAD1/genblk1[18].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_187
+add/SAD1/genblk1[18].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_375
+add/SAD1/genblk1[18].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_374
+add/SAD1/genblk1[18].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_787
+add/SAD1/genblk1[18].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_786
+add/SAD1/genblk1[19].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_186
+add/SAD1/genblk1[19].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_373
+add/SAD1/genblk1[19].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_372
+add/SAD1/genblk1[19].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_785
+add/SAD1/genblk1[19].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_784
+add/SAD1/genblk1[1].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_204
+add/SAD1/genblk1[1].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_409
+add/SAD1/genblk1[1].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_408
+add/SAD1/genblk1[1].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_821
+add/SAD1/genblk1[1].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_820
+add/SAD1/genblk1[20].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_185
+add/SAD1/genblk1[20].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_371
+add/SAD1/genblk1[20].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_370
+add/SAD1/genblk1[20].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_783
+add/SAD1/genblk1[20].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_782
+add/SAD1/genblk1[21].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_184
+add/SAD1/genblk1[21].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_369
+add/SAD1/genblk1[21].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_368
+add/SAD1/genblk1[21].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_781
+add/SAD1/genblk1[21].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_780
+add/SAD1/genblk1[22].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_183
+add/SAD1/genblk1[22].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_367
+add/SAD1/genblk1[22].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_366
+add/SAD1/genblk1[22].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_779
+add/SAD1/genblk1[22].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_778
+add/SAD1/genblk1[23].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_182
+add/SAD1/genblk1[23].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_365
+add/SAD1/genblk1[23].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_364
+add/SAD1/genblk1[23].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_777
+add/SAD1/genblk1[23].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_776
+add/SAD1/genblk1[24].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_181
+add/SAD1/genblk1[24].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_363
+add/SAD1/genblk1[24].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_362
+add/SAD1/genblk1[24].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_775
+add/SAD1/genblk1[24].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_774
+add/SAD1/genblk1[25].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_180
+add/SAD1/genblk1[25].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_361
+add/SAD1/genblk1[25].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_360
+add/SAD1/genblk1[25].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_773
+add/SAD1/genblk1[25].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_772
+add/SAD1/genblk1[26].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_179
+add/SAD1/genblk1[26].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_359
+add/SAD1/genblk1[26].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_358
+add/SAD1/genblk1[26].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_771
+add/SAD1/genblk1[26].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_770
+add/SAD1/genblk1[27].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_178
+add/SAD1/genblk1[27].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_357
+add/SAD1/genblk1[27].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_356
+add/SAD1/genblk1[27].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_769
+add/SAD1/genblk1[27].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_768
+add/SAD1/genblk1[28].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_177
+add/SAD1/genblk1[28].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_355
+add/SAD1/genblk1[28].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_354
+add/SAD1/genblk1[28].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_767
+add/SAD1/genblk1[28].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_766
+add/SAD1/genblk1[29].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_176
+add/SAD1/genblk1[29].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_353
+add/SAD1/genblk1[29].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_352
+add/SAD1/genblk1[29].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_765
+add/SAD1/genblk1[29].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_764
+add/SAD1/genblk1[2].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_203
+add/SAD1/genblk1[2].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_407
+add/SAD1/genblk1[2].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_406
+add/SAD1/genblk1[2].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_819
+add/SAD1/genblk1[2].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_818
+add/SAD1/genblk1[30].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_175
+add/SAD1/genblk1[30].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_351
+add/SAD1/genblk1[30].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_350
+add/SAD1/genblk1[30].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_763
+add/SAD1/genblk1[30].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_762
+add/SAD1/genblk1[31].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_174
+add/SAD1/genblk1[31].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_349
+add/SAD1/genblk1[31].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_348
+add/SAD1/genblk1[31].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_761
+add/SAD1/genblk1[31].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_760
+add/SAD1/genblk1[32].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_173
+add/SAD1/genblk1[32].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_347
+add/SAD1/genblk1[32].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_346
+add/SAD1/genblk1[32].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_759
+add/SAD1/genblk1[32].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_758
+add/SAD1/genblk1[33].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_172
+add/SAD1/genblk1[33].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_345
+add/SAD1/genblk1[33].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_344
+add/SAD1/genblk1[33].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_757
+add/SAD1/genblk1[33].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_756
+add/SAD1/genblk1[34].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_171
+add/SAD1/genblk1[34].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_343
+add/SAD1/genblk1[34].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_342
+add/SAD1/genblk1[34].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_755
+add/SAD1/genblk1[34].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_754
+add/SAD1/genblk1[35].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_170
+add/SAD1/genblk1[35].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_341
+add/SAD1/genblk1[35].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_340
+add/SAD1/genblk1[35].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_753
+add/SAD1/genblk1[35].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_752
+add/SAD1/genblk1[36].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_169
+add/SAD1/genblk1[36].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_339
+add/SAD1/genblk1[36].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_338
+add/SAD1/genblk1[36].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_751
+add/SAD1/genblk1[36].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_750
+add/SAD1/genblk1[37].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_168
+add/SAD1/genblk1[37].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_337
+add/SAD1/genblk1[37].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_336
+add/SAD1/genblk1[37].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_749
+add/SAD1/genblk1[37].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_748
+add/SAD1/genblk1[38].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_167
+add/SAD1/genblk1[38].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_335
+add/SAD1/genblk1[38].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_334
+add/SAD1/genblk1[38].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_747
+add/SAD1/genblk1[38].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_746
+add/SAD1/genblk1[39].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_166
+add/SAD1/genblk1[39].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_333
+add/SAD1/genblk1[39].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_332
+add/SAD1/genblk1[39].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_745
+add/SAD1/genblk1[39].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_744
+add/SAD1/genblk1[3].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_202
+add/SAD1/genblk1[3].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_405
+add/SAD1/genblk1[3].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_404
+add/SAD1/genblk1[3].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_817
+add/SAD1/genblk1[3].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_816
+add/SAD1/genblk1[40].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_165
+add/SAD1/genblk1[40].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_331
+add/SAD1/genblk1[40].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_330
+add/SAD1/genblk1[40].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_743
+add/SAD1/genblk1[40].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_742
+add/SAD1/genblk1[41].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_164
+add/SAD1/genblk1[41].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_329
+add/SAD1/genblk1[41].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_328
+add/SAD1/genblk1[41].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_741
+add/SAD1/genblk1[41].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_740
+add/SAD1/genblk1[42].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_163
+add/SAD1/genblk1[42].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_327
+add/SAD1/genblk1[42].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_326
+add/SAD1/genblk1[42].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_739
+add/SAD1/genblk1[42].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_738
+add/SAD1/genblk1[43].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_162
+add/SAD1/genblk1[43].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_325
+add/SAD1/genblk1[43].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_324
+add/SAD1/genblk1[43].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_737
+add/SAD1/genblk1[43].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_736
+add/SAD1/genblk1[44].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_161
+add/SAD1/genblk1[44].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_323
+add/SAD1/genblk1[44].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_322
+add/SAD1/genblk1[44].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_735
+add/SAD1/genblk1[44].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_734
+add/SAD1/genblk1[45].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_160
+add/SAD1/genblk1[45].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_321
+add/SAD1/genblk1[45].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_320
+add/SAD1/genblk1[45].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_733
+add/SAD1/genblk1[45].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_732
+add/SAD1/genblk1[46].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_159
+add/SAD1/genblk1[46].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_319
+add/SAD1/genblk1[46].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_318
+add/SAD1/genblk1[46].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_731
+add/SAD1/genblk1[46].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_730
+add/SAD1/genblk1[47].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_158
+add/SAD1/genblk1[47].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_317
+add/SAD1/genblk1[47].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_316
+add/SAD1/genblk1[47].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_729
+add/SAD1/genblk1[47].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_728
+add/SAD1/genblk1[48].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_157
+add/SAD1/genblk1[48].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_315
+add/SAD1/genblk1[48].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_314
+add/SAD1/genblk1[48].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_727
+add/SAD1/genblk1[48].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_726
+add/SAD1/genblk1[49].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_156
+add/SAD1/genblk1[49].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_313
+add/SAD1/genblk1[49].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_312
+add/SAD1/genblk1[49].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_725
+add/SAD1/genblk1[49].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_724
+add/SAD1/genblk1[4].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_201
+add/SAD1/genblk1[4].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_403
+add/SAD1/genblk1[4].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_402
+add/SAD1/genblk1[4].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_815
+add/SAD1/genblk1[4].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_814
+add/SAD1/genblk1[50].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_155
+add/SAD1/genblk1[50].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_311
+add/SAD1/genblk1[50].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_310
+add/SAD1/genblk1[50].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_723
+add/SAD1/genblk1[50].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_722
+add/SAD1/genblk1[5].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_200
+add/SAD1/genblk1[5].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_401
+add/SAD1/genblk1[5].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_400
+add/SAD1/genblk1[5].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_813
+add/SAD1/genblk1[5].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_812
+add/SAD1/genblk1[6].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_199
+add/SAD1/genblk1[6].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_399
+add/SAD1/genblk1[6].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_398
+add/SAD1/genblk1[6].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_811
+add/SAD1/genblk1[6].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_810
+add/SAD1/genblk1[7].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_198
+add/SAD1/genblk1[7].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_397
+add/SAD1/genblk1[7].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_396
+add/SAD1/genblk1[7].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_809
+add/SAD1/genblk1[7].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_808
+add/SAD1/genblk1[8].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_197
+add/SAD1/genblk1[8].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_395
+add/SAD1/genblk1[8].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_394
+add/SAD1/genblk1[8].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_807
+add/SAD1/genblk1[8].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_806
+add/SAD1/genblk1[9].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_196
+add/SAD1/genblk1[9].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_393
+add/SAD1/genblk1[9].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_392
+add/SAD1/genblk1[9].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_805
+add/SAD1/genblk1[9].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_804
+add/SAD2                            784.0560      1.0      0.6720      0.0000  0.0000  SAD_6_1
+add/SAD2/genblk1[0].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_154
+add/SAD2/genblk1[0].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_309
+add/SAD2/genblk1[0].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_308
+add/SAD2/genblk1[0].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_721
+add/SAD2/genblk1[0].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_720
+add/SAD2/genblk1[10].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_144
+add/SAD2/genblk1[10].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_289
+add/SAD2/genblk1[10].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_288
+add/SAD2/genblk1[10].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_701
+add/SAD2/genblk1[10].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_700
+add/SAD2/genblk1[11].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_143
+add/SAD2/genblk1[11].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_287
+add/SAD2/genblk1[11].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_286
+add/SAD2/genblk1[11].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_699
+add/SAD2/genblk1[11].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_698
+add/SAD2/genblk1[12].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_142
+add/SAD2/genblk1[12].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_285
+add/SAD2/genblk1[12].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_284
+add/SAD2/genblk1[12].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_697
+add/SAD2/genblk1[12].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_696
+add/SAD2/genblk1[13].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_141
+add/SAD2/genblk1[13].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_283
+add/SAD2/genblk1[13].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_282
+add/SAD2/genblk1[13].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_695
+add/SAD2/genblk1[13].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_694
+add/SAD2/genblk1[14].genblk1.m3      12.9360      0.0      0.0000      0.0000  0.0000  compress4_2_140
+add/SAD2/genblk1[14].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_281
+add/SAD2/genblk1[14].genblk1.m3/u2
+                                      8.4000      0.0      8.4000      0.0000  0.0000  compress3_2_280
+add/SAD2/genblk1[14].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_693
+add/SAD2/genblk1[14].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_692
+add/SAD2/genblk1[15].genblk1.m3       8.4000      0.0      0.0000      0.0000  0.0000  compress4_2_139
+add/SAD2/genblk1[15].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_279
+add/SAD2/genblk1[15].genblk1.m3/u2
+                                      4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_278
+add/SAD2/genblk1[15].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_691
+add/SAD2/genblk1[15].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_690
+add/SAD2/genblk1[16].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_138
+add/SAD2/genblk1[16].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_277
+add/SAD2/genblk1[16].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_276
+add/SAD2/genblk1[16].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_689
+add/SAD2/genblk1[16].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_688
+add/SAD2/genblk1[17].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_137
+add/SAD2/genblk1[17].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_275
+add/SAD2/genblk1[17].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_274
+add/SAD2/genblk1[17].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_687
+add/SAD2/genblk1[17].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_686
+add/SAD2/genblk1[18].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_136
+add/SAD2/genblk1[18].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_273
+add/SAD2/genblk1[18].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_272
+add/SAD2/genblk1[18].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_685
+add/SAD2/genblk1[18].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_684
+add/SAD2/genblk1[19].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_135
+add/SAD2/genblk1[19].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_271
+add/SAD2/genblk1[19].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_270
+add/SAD2/genblk1[19].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_683
+add/SAD2/genblk1[19].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_682
+add/SAD2/genblk1[1].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_153
+add/SAD2/genblk1[1].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_307
+add/SAD2/genblk1[1].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_306
+add/SAD2/genblk1[1].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_719
+add/SAD2/genblk1[1].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_718
+add/SAD2/genblk1[20].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_134
+add/SAD2/genblk1[20].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_269
+add/SAD2/genblk1[20].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_268
+add/SAD2/genblk1[20].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_681
+add/SAD2/genblk1[20].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_680
+add/SAD2/genblk1[21].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_133
+add/SAD2/genblk1[21].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_267
+add/SAD2/genblk1[21].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_266
+add/SAD2/genblk1[21].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_679
+add/SAD2/genblk1[21].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_678
+add/SAD2/genblk1[22].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_132
+add/SAD2/genblk1[22].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_265
+add/SAD2/genblk1[22].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_264
+add/SAD2/genblk1[22].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_677
+add/SAD2/genblk1[22].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_676
+add/SAD2/genblk1[23].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_131
+add/SAD2/genblk1[23].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_263
+add/SAD2/genblk1[23].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_262
+add/SAD2/genblk1[23].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_675
+add/SAD2/genblk1[23].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_674
+add/SAD2/genblk1[24].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_130
+add/SAD2/genblk1[24].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_261
+add/SAD2/genblk1[24].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_260
+add/SAD2/genblk1[24].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_673
+add/SAD2/genblk1[24].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_672
+add/SAD2/genblk1[25].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_129
+add/SAD2/genblk1[25].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_259
+add/SAD2/genblk1[25].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_258
+add/SAD2/genblk1[25].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_671
+add/SAD2/genblk1[25].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_670
+add/SAD2/genblk1[26].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_128
+add/SAD2/genblk1[26].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_257
+add/SAD2/genblk1[26].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_256
+add/SAD2/genblk1[26].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_669
+add/SAD2/genblk1[26].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_668
+add/SAD2/genblk1[27].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_127
+add/SAD2/genblk1[27].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_255
+add/SAD2/genblk1[27].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_254
+add/SAD2/genblk1[27].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_667
+add/SAD2/genblk1[27].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_666
+add/SAD2/genblk1[28].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_126
+add/SAD2/genblk1[28].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_253
+add/SAD2/genblk1[28].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_252
+add/SAD2/genblk1[28].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_665
+add/SAD2/genblk1[28].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_664
+add/SAD2/genblk1[29].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_125
+add/SAD2/genblk1[29].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_251
+add/SAD2/genblk1[29].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_250
+add/SAD2/genblk1[29].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_663
+add/SAD2/genblk1[29].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_662
+add/SAD2/genblk1[2].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_152
+add/SAD2/genblk1[2].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_305
+add/SAD2/genblk1[2].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_304
+add/SAD2/genblk1[2].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_717
+add/SAD2/genblk1[2].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_716
+add/SAD2/genblk1[30].genblk1.m3      12.0960      0.0      0.0000      0.0000  0.0000  compress4_2_124
+add/SAD2/genblk1[30].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_249
+add/SAD2/genblk1[30].genblk1.m3/u2
+                                      8.4000      0.0      8.4000      0.0000  0.0000  compress3_2_248
+add/SAD2/genblk1[30].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_661
+add/SAD2/genblk1[30].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_660
+add/SAD2/genblk1[31].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_123
+add/SAD2/genblk1[31].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_247
+add/SAD2/genblk1[31].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_246
+add/SAD2/genblk1[31].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_659
+add/SAD2/genblk1[31].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_658
+add/SAD2/genblk1[32].genblk1.m3      12.2640      0.0      0.0000      0.0000  0.0000  compress4_2_122
+add/SAD2/genblk1[32].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_245
+add/SAD2/genblk1[32].genblk1.m3/u2
+                                      7.7280      0.0      7.7280      0.0000  0.0000  compress3_2_244
+add/SAD2/genblk1[32].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_657
+add/SAD2/genblk1[32].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_656
+add/SAD2/genblk1[33].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_121
+add/SAD2/genblk1[33].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_243
+add/SAD2/genblk1[33].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_242
+add/SAD2/genblk1[33].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_655
+add/SAD2/genblk1[33].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_654
+add/SAD2/genblk1[34].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_120
+add/SAD2/genblk1[34].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_241
+add/SAD2/genblk1[34].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_240
+add/SAD2/genblk1[34].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_653
+add/SAD2/genblk1[34].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_652
+add/SAD2/genblk1[35].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_119
+add/SAD2/genblk1[35].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_239
+add/SAD2/genblk1[35].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_238
+add/SAD2/genblk1[35].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_651
+add/SAD2/genblk1[35].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_650
+add/SAD2/genblk1[36].genblk1.m3      12.0960      0.0      0.0000      0.0000  0.0000  compress4_2_118
+add/SAD2/genblk1[36].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_237
+add/SAD2/genblk1[36].genblk1.m3/u2
+                                      8.4000      0.0      8.4000      0.0000  0.0000  compress3_2_236
+add/SAD2/genblk1[36].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_649
+add/SAD2/genblk1[36].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_648
+add/SAD2/genblk1[37].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_117
+add/SAD2/genblk1[37].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_235
+add/SAD2/genblk1[37].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_234
+add/SAD2/genblk1[37].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_647
+add/SAD2/genblk1[37].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_646
+add/SAD2/genblk1[38].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_116
+add/SAD2/genblk1[38].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_233
+add/SAD2/genblk1[38].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_232
+add/SAD2/genblk1[38].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_645
+add/SAD2/genblk1[38].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_644
+add/SAD2/genblk1[39].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_115
+add/SAD2/genblk1[39].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_231
+add/SAD2/genblk1[39].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_230
+add/SAD2/genblk1[39].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_643
+add/SAD2/genblk1[39].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_642
+add/SAD2/genblk1[3].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_151
+add/SAD2/genblk1[3].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_303
+add/SAD2/genblk1[3].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_302
+add/SAD2/genblk1[3].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_715
+add/SAD2/genblk1[3].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_714
+add/SAD2/genblk1[40].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_114
+add/SAD2/genblk1[40].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_229
+add/SAD2/genblk1[40].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_228
+add/SAD2/genblk1[40].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_641
+add/SAD2/genblk1[40].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_640
+add/SAD2/genblk1[41].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_113
+add/SAD2/genblk1[41].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_227
+add/SAD2/genblk1[41].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_226
+add/SAD2/genblk1[41].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_639
+add/SAD2/genblk1[41].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_638
+add/SAD2/genblk1[42].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_112
+add/SAD2/genblk1[42].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_225
+add/SAD2/genblk1[42].genblk1.m3/u2
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_224
+add/SAD2/genblk1[42].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_637
+add/SAD2/genblk1[42].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_636
+add/SAD2/genblk1[43].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_111
+add/SAD2/genblk1[43].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_223
+add/SAD2/genblk1[43].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_222
+add/SAD2/genblk1[43].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_635
+add/SAD2/genblk1[43].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_634
+add/SAD2/genblk1[44].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_110
+add/SAD2/genblk1[44].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_221
+add/SAD2/genblk1[44].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_220
+add/SAD2/genblk1[44].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_633
+add/SAD2/genblk1[44].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_632
+add/SAD2/genblk1[45].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_109
+add/SAD2/genblk1[45].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_219
+add/SAD2/genblk1[45].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_218
+add/SAD2/genblk1[45].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_631
+add/SAD2/genblk1[45].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_630
+add/SAD2/genblk1[46].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_108
+add/SAD2/genblk1[46].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_217
+add/SAD2/genblk1[46].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_216
+add/SAD2/genblk1[46].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_629
+add/SAD2/genblk1[46].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_628
+add/SAD2/genblk1[47].genblk1.m3      12.0960      0.0      0.0000      0.0000  0.0000  compress4_2_107
+add/SAD2/genblk1[47].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_215
+add/SAD2/genblk1[47].genblk1.m3/u2
+                                      8.4000      0.0      8.4000      0.0000  0.0000  compress3_2_214
+add/SAD2/genblk1[47].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_627
+add/SAD2/genblk1[47].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_626
+add/SAD2/genblk1[48].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_106
+add/SAD2/genblk1[48].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_213
+add/SAD2/genblk1[48].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_212
+add/SAD2/genblk1[48].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_625
+add/SAD2/genblk1[48].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_624
+add/SAD2/genblk1[49].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_105
+add/SAD2/genblk1[49].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_211
+add/SAD2/genblk1[49].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_210
+add/SAD2/genblk1[49].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_623
+add/SAD2/genblk1[49].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_622
+add/SAD2/genblk1[4].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_150
+add/SAD2/genblk1[4].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_301
+add/SAD2/genblk1[4].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_300
+add/SAD2/genblk1[4].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_713
+add/SAD2/genblk1[4].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_712
+add/SAD2/genblk1[50].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_104
+add/SAD2/genblk1[50].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_209
+add/SAD2/genblk1[50].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_208
+add/SAD2/genblk1[50].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_621
+add/SAD2/genblk1[50].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_620
+add/SAD2/genblk1[5].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_149
+add/SAD2/genblk1[5].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_299
+add/SAD2/genblk1[5].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_298
+add/SAD2/genblk1[5].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_711
+add/SAD2/genblk1[5].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_710
+add/SAD2/genblk1[6].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_148
+add/SAD2/genblk1[6].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_297
+add/SAD2/genblk1[6].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_296
+add/SAD2/genblk1[6].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_709
+add/SAD2/genblk1[6].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_708
+add/SAD2/genblk1[7].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_147
+add/SAD2/genblk1[7].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_295
+add/SAD2/genblk1[7].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_294
+add/SAD2/genblk1[7].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_707
+add/SAD2/genblk1[7].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_706
+add/SAD2/genblk1[8].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_146
+add/SAD2/genblk1[8].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_293
+add/SAD2/genblk1[8].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_292
+add/SAD2/genblk1[8].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_705
+add/SAD2/genblk1[8].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_704
+add/SAD2/genblk1[9].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_145
+add/SAD2/genblk1[9].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_291
+add/SAD2/genblk1[9].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_290
+add/SAD2/genblk1[9].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_703
+add/SAD2/genblk1[9].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_702
+add/SAD3                            802.2000      1.0      0.6720      0.0000  0.0000  SAD_6_0
+add/SAD3/genblk1[0].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_103
+add/SAD3/genblk1[0].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_207
+add/SAD3/genblk1[0].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_206
+add/SAD3/genblk1[0].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_619
+add/SAD3/genblk1[0].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_618
+add/SAD3/genblk1[10].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_93
+add/SAD3/genblk1[10].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_187
+add/SAD3/genblk1[10].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_186
+add/SAD3/genblk1[10].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_599
+add/SAD3/genblk1[10].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_598
+add/SAD3/genblk1[11].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_92
+add/SAD3/genblk1[11].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_185
+add/SAD3/genblk1[11].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_184
+add/SAD3/genblk1[11].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_597
+add/SAD3/genblk1[11].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_596
+add/SAD3/genblk1[12].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_91
+add/SAD3/genblk1[12].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_183
+add/SAD3/genblk1[12].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_182
+add/SAD3/genblk1[12].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_595
+add/SAD3/genblk1[12].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_594
+add/SAD3/genblk1[13].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_90
+add/SAD3/genblk1[13].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_181
+add/SAD3/genblk1[13].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_180
+add/SAD3/genblk1[13].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_593
+add/SAD3/genblk1[13].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_592
+add/SAD3/genblk1[14].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_89
+add/SAD3/genblk1[14].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_179
+add/SAD3/genblk1[14].genblk1.m3/u2
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_178
+add/SAD3/genblk1[14].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_591
+add/SAD3/genblk1[14].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_590
+add/SAD3/genblk1[15].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_88
+add/SAD3/genblk1[15].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_177
+add/SAD3/genblk1[15].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_176
+add/SAD3/genblk1[15].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_589
+add/SAD3/genblk1[15].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_588
+add/SAD3/genblk1[16].genblk1.m3      12.9360      0.0      0.0000      0.0000  0.0000  compress4_2_87
+add/SAD3/genblk1[16].genblk1.m3/u1
+                                      8.4000      0.0      8.4000      0.0000  0.0000  compress3_2_175
+add/SAD3/genblk1[16].genblk1.m3/u2
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_174
+add/SAD3/genblk1[16].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_587
+add/SAD3/genblk1[16].m2               8.7360      0.0      8.7360      0.0000  0.0000  compress3_2_586
+add/SAD3/genblk1[17].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_86
+add/SAD3/genblk1[17].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_173
+add/SAD3/genblk1[17].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_172
+add/SAD3/genblk1[17].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_585
+add/SAD3/genblk1[17].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_584
+add/SAD3/genblk1[18].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_85
+add/SAD3/genblk1[18].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_171
+add/SAD3/genblk1[18].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_170
+add/SAD3/genblk1[18].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_583
+add/SAD3/genblk1[18].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_582
+add/SAD3/genblk1[19].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_84
+add/SAD3/genblk1[19].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_169
+add/SAD3/genblk1[19].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_168
+add/SAD3/genblk1[19].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_581
+add/SAD3/genblk1[19].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_580
+add/SAD3/genblk1[1].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_102
+add/SAD3/genblk1[1].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_205
+add/SAD3/genblk1[1].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_204
+add/SAD3/genblk1[1].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_617
+add/SAD3/genblk1[1].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_616
+add/SAD3/genblk1[20].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_83
+add/SAD3/genblk1[20].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_167
+add/SAD3/genblk1[20].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_166
+add/SAD3/genblk1[20].m1               7.0560      0.0      7.0560      0.0000  0.0000  compress3_2_579
+add/SAD3/genblk1[20].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_578
+add/SAD3/genblk1[21].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_82
+add/SAD3/genblk1[21].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_165
+add/SAD3/genblk1[21].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_164
+add/SAD3/genblk1[21].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_577
+add/SAD3/genblk1[21].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_576
+add/SAD3/genblk1[22].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_81
+add/SAD3/genblk1[22].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_163
+add/SAD3/genblk1[22].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_162
+add/SAD3/genblk1[22].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_575
+add/SAD3/genblk1[22].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_574
+add/SAD3/genblk1[23].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_80
+add/SAD3/genblk1[23].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_161
+add/SAD3/genblk1[23].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_160
+add/SAD3/genblk1[23].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_573
+add/SAD3/genblk1[23].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_572
+add/SAD3/genblk1[24].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_79
+add/SAD3/genblk1[24].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_159
+add/SAD3/genblk1[24].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_158
+add/SAD3/genblk1[24].m1               4.2000      0.0      4.2000      0.0000  0.0000  compress3_2_571
+add/SAD3/genblk1[24].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_570
+add/SAD3/genblk1[25].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_78
+add/SAD3/genblk1[25].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_157
+add/SAD3/genblk1[25].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_156
+add/SAD3/genblk1[25].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_569
+add/SAD3/genblk1[25].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_568
+add/SAD3/genblk1[26].genblk1.m3       8.4000      0.0      0.0000      0.0000  0.0000  compress4_2_77
+add/SAD3/genblk1[26].genblk1.m3/u1
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_155
+add/SAD3/genblk1[26].genblk1.m3/u2
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_154
+add/SAD3/genblk1[26].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_567
+add/SAD3/genblk1[26].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_566
+add/SAD3/genblk1[27].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_76
+add/SAD3/genblk1[27].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_153
+add/SAD3/genblk1[27].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_152
+add/SAD3/genblk1[27].m1               4.0320      0.0      4.0320      0.0000  0.0000  compress3_2_565
+add/SAD3/genblk1[27].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_564
+add/SAD3/genblk1[28].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_75
+add/SAD3/genblk1[28].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_151
+add/SAD3/genblk1[28].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_150
+add/SAD3/genblk1[28].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_563
+add/SAD3/genblk1[28].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_562
+add/SAD3/genblk1[29].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_74
+add/SAD3/genblk1[29].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_149
+add/SAD3/genblk1[29].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_148
+add/SAD3/genblk1[29].m1               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_561
+add/SAD3/genblk1[29].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_560
+add/SAD3/genblk1[2].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_101
+add/SAD3/genblk1[2].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_203
+add/SAD3/genblk1[2].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_202
+add/SAD3/genblk1[2].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_615
+add/SAD3/genblk1[2].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_614
+add/SAD3/genblk1[30].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_73
+add/SAD3/genblk1[30].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_147
+add/SAD3/genblk1[30].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_146
+add/SAD3/genblk1[30].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_559
+add/SAD3/genblk1[30].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_558
+add/SAD3/genblk1[31].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_72
+add/SAD3/genblk1[31].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_145
+add/SAD3/genblk1[31].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_144
+add/SAD3/genblk1[31].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_557
+add/SAD3/genblk1[31].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_556
+add/SAD3/genblk1[32].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_71
+add/SAD3/genblk1[32].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_143
+add/SAD3/genblk1[32].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_142
+add/SAD3/genblk1[32].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_555
+add/SAD3/genblk1[32].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_554
+add/SAD3/genblk1[33].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_70
+add/SAD3/genblk1[33].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_141
+add/SAD3/genblk1[33].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_140
+add/SAD3/genblk1[33].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_553
+add/SAD3/genblk1[33].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_552
+add/SAD3/genblk1[34].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_69
+add/SAD3/genblk1[34].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_139
+add/SAD3/genblk1[34].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_138
+add/SAD3/genblk1[34].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_551
+add/SAD3/genblk1[34].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_550
+add/SAD3/genblk1[35].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_68
+add/SAD3/genblk1[35].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_137
+add/SAD3/genblk1[35].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_136
+add/SAD3/genblk1[35].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_549
+add/SAD3/genblk1[35].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_548
+add/SAD3/genblk1[36].genblk1.m3       7.5600      0.0      0.0000      0.0000  0.0000  compress4_2_67
+add/SAD3/genblk1[36].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_135
+add/SAD3/genblk1[36].genblk1.m3/u2
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_134
+add/SAD3/genblk1[36].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_547
+add/SAD3/genblk1[36].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_546
+add/SAD3/genblk1[37].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_66
+add/SAD3/genblk1[37].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_133
+add/SAD3/genblk1[37].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_132
+add/SAD3/genblk1[37].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_545
+add/SAD3/genblk1[37].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_544
+add/SAD3/genblk1[38].genblk1.m3       8.4000      0.0      0.0000      0.0000  0.0000  compress4_2_65
+add/SAD3/genblk1[38].genblk1.m3/u1
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_131
+add/SAD3/genblk1[38].genblk1.m3/u2
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_130
+add/SAD3/genblk1[38].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_543
+add/SAD3/genblk1[38].m2               7.5600      0.0      7.5600      0.0000  0.0000  compress3_2_542
+add/SAD3/genblk1[39].genblk1.m3       9.2400      0.0      0.0000      0.0000  0.0000  compress4_2_64
+add/SAD3/genblk1[39].genblk1.m3/u1
+                                      4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_129
+add/SAD3/genblk1[39].genblk1.m3/u2
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_128
+add/SAD3/genblk1[39].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_541
+add/SAD3/genblk1[39].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_540
+add/SAD3/genblk1[3].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_100
+add/SAD3/genblk1[3].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_201
+add/SAD3/genblk1[3].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_200
+add/SAD3/genblk1[3].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_613
+add/SAD3/genblk1[3].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_612
+add/SAD3/genblk1[40].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_63
+add/SAD3/genblk1[40].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_127
+add/SAD3/genblk1[40].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_126
+add/SAD3/genblk1[40].m1               4.0320      0.0      4.0320      0.0000  0.0000  compress3_2_539
+add/SAD3/genblk1[40].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_538
+add/SAD3/genblk1[41].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_62
+add/SAD3/genblk1[41].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_125
+add/SAD3/genblk1[41].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_124
+add/SAD3/genblk1[41].m1               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_537
+add/SAD3/genblk1[41].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_536
+add/SAD3/genblk1[42].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_61
+add/SAD3/genblk1[42].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_123
+add/SAD3/genblk1[42].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_122
+add/SAD3/genblk1[42].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_535
+add/SAD3/genblk1[42].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_534
+add/SAD3/genblk1[43].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_60
+add/SAD3/genblk1[43].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_121
+add/SAD3/genblk1[43].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_120
+add/SAD3/genblk1[43].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_533
+add/SAD3/genblk1[43].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_532
+add/SAD3/genblk1[44].genblk1.m3       7.5600      0.0      0.0000      0.0000  0.0000  compress4_2_59
+add/SAD3/genblk1[44].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_119
+add/SAD3/genblk1[44].genblk1.m3/u2
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_118
+add/SAD3/genblk1[44].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_531
+add/SAD3/genblk1[44].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_530
+add/SAD3/genblk1[45].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_58
+add/SAD3/genblk1[45].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_117
+add/SAD3/genblk1[45].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_116
+add/SAD3/genblk1[45].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_529
+add/SAD3/genblk1[45].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_528
+add/SAD3/genblk1[46].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_57
+add/SAD3/genblk1[46].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_115
+add/SAD3/genblk1[46].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_114
+add/SAD3/genblk1[46].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_527
+add/SAD3/genblk1[46].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_526
+add/SAD3/genblk1[47].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_56
+add/SAD3/genblk1[47].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_113
+add/SAD3/genblk1[47].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_112
+add/SAD3/genblk1[47].m1               5.8800      0.0      5.8800      0.0000  0.0000  compress3_2_525
+add/SAD3/genblk1[47].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_524
+add/SAD3/genblk1[48].genblk1.m3      12.6000      0.0      0.0000      0.0000  0.0000  compress4_2_55
+add/SAD3/genblk1[48].genblk1.m3/u1
+                                      8.9040      0.0      8.9040      0.0000  0.0000  compress3_2_111
+add/SAD3/genblk1[48].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_110
+add/SAD3/genblk1[48].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_523
+add/SAD3/genblk1[48].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_522
+add/SAD3/genblk1[49].genblk1.m3       9.5760      0.0      0.0000      0.0000  0.0000  compress4_2_54
+add/SAD3/genblk1[49].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_109
+add/SAD3/genblk1[49].genblk1.m3/u2
+                                      5.8800      0.0      5.8800      0.0000  0.0000  compress3_2_108
+add/SAD3/genblk1[49].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_521
+add/SAD3/genblk1[49].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_520
+add/SAD3/genblk1[4].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_99
+add/SAD3/genblk1[4].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_199
+add/SAD3/genblk1[4].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_198
+add/SAD3/genblk1[4].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_611
+add/SAD3/genblk1[4].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_610
+add/SAD3/genblk1[50].genblk1.m3      12.0960      0.0      0.0000      0.0000  0.0000  compress4_2_53
+add/SAD3/genblk1[50].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_107
+add/SAD3/genblk1[50].genblk1.m3/u2
+                                      8.4000      0.0      8.4000      0.0000  0.0000  compress3_2_106
+add/SAD3/genblk1[50].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_519
+add/SAD3/genblk1[50].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_518
+add/SAD3/genblk1[5].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_98
+add/SAD3/genblk1[5].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_197
+add/SAD3/genblk1[5].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_196
+add/SAD3/genblk1[5].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_609
+add/SAD3/genblk1[5].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_608
+add/SAD3/genblk1[6].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_97
+add/SAD3/genblk1[6].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_195
+add/SAD3/genblk1[6].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_194
+add/SAD3/genblk1[6].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_607
+add/SAD3/genblk1[6].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_606
+add/SAD3/genblk1[7].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_96
+add/SAD3/genblk1[7].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_193
+add/SAD3/genblk1[7].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_192
+add/SAD3/genblk1[7].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_605
+add/SAD3/genblk1[7].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_604
+add/SAD3/genblk1[8].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_95
+add/SAD3/genblk1[8].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_191
+add/SAD3/genblk1[8].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_190
+add/SAD3/genblk1[8].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_603
+add/SAD3/genblk1[8].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_602
+add/SAD3/genblk1[9].genblk1.m3       10.7520      0.0      0.0000      0.0000  0.0000  compress4_2_94
+add/SAD3/genblk1[9].genblk1.m3/u1     5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_189
+add/SAD3/genblk1[9].genblk1.m3/u2     5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_188
+add/SAD3/genblk1[9].m1                3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_601
+add/SAD3/genblk1[9].m2                3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_600
+add/SAD4                            866.5440      1.1      0.6720      0.0000  0.0000  SAD_6_v2
+add/SAD4/genblk1[0].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_52
+add/SAD4/genblk1[0].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_105
+add/SAD4/genblk1[0].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_104
+add/SAD4/genblk1[0].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_517
+add/SAD4/genblk1[0].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_516
+add/SAD4/genblk1[10].genblk1.m3       7.5600      0.0      0.0000      0.0000  0.0000  compress4_2_42
+add/SAD4/genblk1[10].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_85
+add/SAD4/genblk1[10].genblk1.m3/u2
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_84
+add/SAD4/genblk1[10].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_497
+add/SAD4/genblk1[10].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_496
+add/SAD4/genblk1[11].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_41
+add/SAD4/genblk1[11].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_83
+add/SAD4/genblk1[11].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_82
+add/SAD4/genblk1[11].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_495
+add/SAD4/genblk1[11].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_494
+add/SAD4/genblk1[12].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_40
+add/SAD4/genblk1[12].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_81
+add/SAD4/genblk1[12].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_80
+add/SAD4/genblk1[12].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_493
+add/SAD4/genblk1[12].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_492
+add/SAD4/genblk1[13].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_39
+add/SAD4/genblk1[13].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_79
+add/SAD4/genblk1[13].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_78
+add/SAD4/genblk1[13].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_491
+add/SAD4/genblk1[13].m2               4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_490
+add/SAD4/genblk1[14].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_38
+add/SAD4/genblk1[14].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_77
+add/SAD4/genblk1[14].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_76
+add/SAD4/genblk1[14].m1               7.5600      0.0      7.5600      0.0000  0.0000  compress3_2_489
+add/SAD4/genblk1[14].m2               5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_488
+add/SAD4/genblk1[15].genblk1.m3       8.4000      0.0      0.0000      0.0000  0.0000  compress4_2_37
+add/SAD4/genblk1[15].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_75
+add/SAD4/genblk1[15].genblk1.m3/u2
+                                      4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_74
+add/SAD4/genblk1[15].m1               4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_487
+add/SAD4/genblk1[15].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_486
+add/SAD4/genblk1[16].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_36
+add/SAD4/genblk1[16].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_73
+add/SAD4/genblk1[16].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_72
+add/SAD4/genblk1[16].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_485
+add/SAD4/genblk1[16].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_484
+add/SAD4/genblk1[17].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_35
+add/SAD4/genblk1[17].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_71
+add/SAD4/genblk1[17].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_70
+add/SAD4/genblk1[17].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_483
+add/SAD4/genblk1[17].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_482
+add/SAD4/genblk1[18].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_34
+add/SAD4/genblk1[18].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_69
+add/SAD4/genblk1[18].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_68
+add/SAD4/genblk1[18].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_481
+add/SAD4/genblk1[18].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_480
+add/SAD4/genblk1[19].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_33
+add/SAD4/genblk1[19].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_67
+add/SAD4/genblk1[19].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_66
+add/SAD4/genblk1[19].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_479
+add/SAD4/genblk1[19].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_478
+add/SAD4/genblk1[1].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_51
+add/SAD4/genblk1[1].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_103
+add/SAD4/genblk1[1].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_102
+add/SAD4/genblk1[1].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_515
+add/SAD4/genblk1[1].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_514
+add/SAD4/genblk1[20].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_32
+add/SAD4/genblk1[20].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_65
+add/SAD4/genblk1[20].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_64
+add/SAD4/genblk1[20].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_477
+add/SAD4/genblk1[20].m2               4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_476
+add/SAD4/genblk1[21].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_31
+add/SAD4/genblk1[21].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_63
+add/SAD4/genblk1[21].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_62
+add/SAD4/genblk1[21].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_475
+add/SAD4/genblk1[21].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_474
+add/SAD4/genblk1[22].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_30
+add/SAD4/genblk1[22].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_61
+add/SAD4/genblk1[22].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_60
+add/SAD4/genblk1[22].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_473
+add/SAD4/genblk1[22].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_472
+add/SAD4/genblk1[23].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_29
+add/SAD4/genblk1[23].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_59
+add/SAD4/genblk1[23].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_58
+add/SAD4/genblk1[23].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_471
+add/SAD4/genblk1[23].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_470
+add/SAD4/genblk1[24].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_28
+add/SAD4/genblk1[24].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_57
+add/SAD4/genblk1[24].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_56
+add/SAD4/genblk1[24].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_469
+add/SAD4/genblk1[24].m2               5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_468
+add/SAD4/genblk1[25].genblk1.m3       7.5600      0.0      0.0000      0.0000  0.0000  compress4_2_27
+add/SAD4/genblk1[25].genblk1.m3/u1
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_55
+add/SAD4/genblk1[25].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_54
+add/SAD4/genblk1[25].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_467
+add/SAD4/genblk1[25].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_466
+add/SAD4/genblk1[26].genblk1.m3       7.5600      0.0      0.0000      0.0000  0.0000  compress4_2_26
+add/SAD4/genblk1[26].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_53
+add/SAD4/genblk1[26].genblk1.m3/u2
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_52
+add/SAD4/genblk1[26].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_465
+add/SAD4/genblk1[26].m2               5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_464
+add/SAD4/genblk1[27].genblk1.m3       8.5680      0.0      0.0000      0.0000  0.0000  compress4_2_25
+add/SAD4/genblk1[27].genblk1.m3/u1
+                                      4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_51
+add/SAD4/genblk1[27].genblk1.m3/u2
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_50
+add/SAD4/genblk1[27].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_463
+add/SAD4/genblk1[27].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_462
+add/SAD4/genblk1[28].genblk1.m3       7.5600      0.0      0.0000      0.0000  0.0000  compress4_2_24
+add/SAD4/genblk1[28].genblk1.m3/u1
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_49
+add/SAD4/genblk1[28].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_48
+add/SAD4/genblk1[28].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_461
+add/SAD4/genblk1[28].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_460
+add/SAD4/genblk1[29].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_23
+add/SAD4/genblk1[29].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_47
+add/SAD4/genblk1[29].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_46
+add/SAD4/genblk1[29].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_459
+add/SAD4/genblk1[29].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_458
+add/SAD4/genblk1[2].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_50
+add/SAD4/genblk1[2].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_101
+add/SAD4/genblk1[2].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_100
+add/SAD4/genblk1[2].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_513
+add/SAD4/genblk1[2].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_512
+add/SAD4/genblk1[30].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_22
+add/SAD4/genblk1[30].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_45
+add/SAD4/genblk1[30].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_44
+add/SAD4/genblk1[30].m1               8.7360      0.0      8.7360      0.0000  0.0000  compress3_2_457
+add/SAD4/genblk1[30].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_456
+add/SAD4/genblk1[31].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_21
+add/SAD4/genblk1[31].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_43
+add/SAD4/genblk1[31].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_42
+add/SAD4/genblk1[31].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_455
+add/SAD4/genblk1[31].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_454
+add/SAD4/genblk1[32].genblk1.m3       9.2400      0.0      0.0000      0.0000  0.0000  compress4_2_20
+add/SAD4/genblk1[32].genblk1.m3/u1
+                                      4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_41
+add/SAD4/genblk1[32].genblk1.m3/u2
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_40
+add/SAD4/genblk1[32].m1               8.9040      0.0      8.9040      0.0000  0.0000  compress3_2_453
+add/SAD4/genblk1[32].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_452
+add/SAD4/genblk1[33].genblk1.m3       8.4000      0.0      0.0000      0.0000  0.0000  compress4_2_19
+add/SAD4/genblk1[33].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_39
+add/SAD4/genblk1[33].genblk1.m3/u2
+                                      4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_38
+add/SAD4/genblk1[33].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_451
+add/SAD4/genblk1[33].m2               4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_450
+add/SAD4/genblk1[34].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_18
+add/SAD4/genblk1[34].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_37
+add/SAD4/genblk1[34].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_36
+add/SAD4/genblk1[34].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_449
+add/SAD4/genblk1[34].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_448
+add/SAD4/genblk1[35].genblk1.m3       8.5680      0.0      0.0000      0.0000  0.0000  compress4_2_17
+add/SAD4/genblk1[35].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_35
+add/SAD4/genblk1[35].genblk1.m3/u2
+                                      4.8720      0.0      4.8720      0.0000  0.0000  compress3_2_34
+add/SAD4/genblk1[35].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_447
+add/SAD4/genblk1[35].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_446
+add/SAD4/genblk1[36].genblk1.m3       7.5600      0.0      0.0000      0.0000  0.0000  compress4_2_16
+add/SAD4/genblk1[36].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_33
+add/SAD4/genblk1[36].genblk1.m3/u2
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_32
+add/SAD4/genblk1[36].m1               8.7360      0.0      8.7360      0.0000  0.0000  compress3_2_445
+add/SAD4/genblk1[36].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_444
+add/SAD4/genblk1[37].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_15
+add/SAD4/genblk1[37].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_31
+add/SAD4/genblk1[37].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_30
+add/SAD4/genblk1[37].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_443
+add/SAD4/genblk1[37].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_442
+add/SAD4/genblk1[38].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_14
+add/SAD4/genblk1[38].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_29
+add/SAD4/genblk1[38].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_28
+add/SAD4/genblk1[38].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_441
+add/SAD4/genblk1[38].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_440
+add/SAD4/genblk1[39].genblk1.m3       7.8960      0.0      0.0000      0.0000  0.0000  compress4_2_13
+add/SAD4/genblk1[39].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_27
+add/SAD4/genblk1[39].genblk1.m3/u2
+                                      4.2000      0.0      4.2000      0.0000  0.0000  compress3_2_26
+add/SAD4/genblk1[39].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_439
+add/SAD4/genblk1[39].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_438
+add/SAD4/genblk1[3].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_49
+add/SAD4/genblk1[3].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_99
+add/SAD4/genblk1[3].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_98
+add/SAD4/genblk1[3].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_511
+add/SAD4/genblk1[3].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_510
+add/SAD4/genblk1[40].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_12
+add/SAD4/genblk1[40].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_25
+add/SAD4/genblk1[40].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_24
+add/SAD4/genblk1[40].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_437
+add/SAD4/genblk1[40].m2               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_436
+add/SAD4/genblk1[41].genblk1.m3       9.2400      0.0      0.0000      0.0000  0.0000  compress4_2_11
+add/SAD4/genblk1[41].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_23
+add/SAD4/genblk1[41].genblk1.m3/u2
+                                      4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_22
+add/SAD4/genblk1[41].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_435
+add/SAD4/genblk1[41].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_434
+add/SAD4/genblk1[42].genblk1.m3       9.0720      0.0      0.0000      0.0000  0.0000  compress4_2_10
+add/SAD4/genblk1[42].genblk1.m3/u1
+                                      5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_21
+add/SAD4/genblk1[42].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_20
+add/SAD4/genblk1[42].m1               3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_433
+add/SAD4/genblk1[42].m2               6.3840      0.0      6.3840      0.0000  0.0000  compress3_2_432
+add/SAD4/genblk1[43].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_9
+add/SAD4/genblk1[43].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_19
+add/SAD4/genblk1[43].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_18
+add/SAD4/genblk1[43].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_431
+add/SAD4/genblk1[43].m2               5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_430
+add/SAD4/genblk1[44].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_8
+add/SAD4/genblk1[44].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_17
+add/SAD4/genblk1[44].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_16
+add/SAD4/genblk1[44].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_429
+add/SAD4/genblk1[44].m2               5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_428
+add/SAD4/genblk1[45].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_7
+add/SAD4/genblk1[45].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_15
+add/SAD4/genblk1[45].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_14
+add/SAD4/genblk1[45].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_427
+add/SAD4/genblk1[45].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_426
+add/SAD4/genblk1[46].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_6
+add/SAD4/genblk1[46].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_13
+add/SAD4/genblk1[46].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_12
+add/SAD4/genblk1[46].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_425
+add/SAD4/genblk1[46].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_424
+add/SAD4/genblk1[47].genblk1.m3       8.2320      0.0      0.0000      0.0000  0.0000  compress4_2_5
+add/SAD4/genblk1[47].genblk1.m3/u1
+                                      4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_11
+add/SAD4/genblk1[47].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_10
+add/SAD4/genblk1[47].m1               9.0720      0.0      9.0720      0.0000  0.0000  compress3_2_423
+add/SAD4/genblk1[47].m2               4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_422
+add/SAD4/genblk1[48].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_4
+add/SAD4/genblk1[48].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_9
+add/SAD4/genblk1[48].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_8
+add/SAD4/genblk1[48].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_421
+add/SAD4/genblk1[48].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_420
+add/SAD4/genblk1[49].genblk1.m3       7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_3
+add/SAD4/genblk1[49].genblk1.m3/u1
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_7
+add/SAD4/genblk1[49].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_6
+add/SAD4/genblk1[49].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_419
+add/SAD4/genblk1[49].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_418
+add/SAD4/genblk1[4].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_48
+add/SAD4/genblk1[4].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_97
+add/SAD4/genblk1[4].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_96
+add/SAD4/genblk1[4].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_509
+add/SAD4/genblk1[4].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_508
+add/SAD4/genblk1[50].genblk1.m3       8.5680      0.0      0.0000      0.0000  0.0000  compress4_2_2
+add/SAD4/genblk1[50].genblk1.m3/u1
+                                      4.8720      0.0      4.8720      0.0000  0.0000  compress3_2_5
+add/SAD4/genblk1[50].genblk1.m3/u2
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_4
+add/SAD4/genblk1[50].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_417
+add/SAD4/genblk1[50].m2               4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_416
+add/SAD4/genblk1[51].genblk1.m3      14.1120      0.0      0.0000      0.0000  0.0000  compress4_2_1
+add/SAD4/genblk1[51].genblk1.m3/u1
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_3
+add/SAD4/genblk1[51].genblk1.m3/u2
+                                     10.2480      0.0     10.2480      0.0000  0.0000  compress3_2_2
+add/SAD4/genblk1[51].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_415
+add/SAD4/genblk1[51].m2               5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_414
+add/SAD4/genblk1[52].genblk1.m3      13.4400      0.0      0.0000      0.0000  0.0000  compress4_2_0
+add/SAD4/genblk1[52].genblk1.m3/u1
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_1
+add/SAD4/genblk1[52].genblk1.m3/u2
+                                      9.5760      0.0      9.5760      0.0000  0.0000  compress3_2_0
+add/SAD4/genblk1[52].m1               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_413
+add/SAD4/genblk1[52].m2               3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_412
+add/SAD4/genblk1[5].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_47
+add/SAD4/genblk1[5].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_95
+add/SAD4/genblk1[5].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_94
+add/SAD4/genblk1[5].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_507
+add/SAD4/genblk1[5].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_506
+add/SAD4/genblk1[6].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_46
+add/SAD4/genblk1[6].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_93
+add/SAD4/genblk1[6].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_92
+add/SAD4/genblk1[6].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_505
+add/SAD4/genblk1[6].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_504
+add/SAD4/genblk1[7].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_45
+add/SAD4/genblk1[7].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_91
+add/SAD4/genblk1[7].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_90
+add/SAD4/genblk1[7].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_503
+add/SAD4/genblk1[7].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_502
+add/SAD4/genblk1[8].genblk1.m3        7.3920      0.0      0.0000      0.0000  0.0000  compress4_2_44
+add/SAD4/genblk1[8].genblk1.m3/u1     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_89
+add/SAD4/genblk1[8].genblk1.m3/u2     3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_88
+add/SAD4/genblk1[8].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_501
+add/SAD4/genblk1[8].m2                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_500
+add/SAD4/genblk1[9].genblk1.m3        9.9120      0.0      0.0000      0.0000  0.0000  compress4_2_43
+add/SAD4/genblk1[9].genblk1.m3/u1     5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_87
+add/SAD4/genblk1[9].genblk1.m3/u2     4.5360      0.0      4.5360      0.0000  0.0000  compress3_2_86
+add/SAD4/genblk1[9].m1                3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_499
+add/SAD4/genblk1[9].m2                5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_498
+add_0_root_add_232_ni               193.2000      0.2    193.2000      0.0000  0.0000  fpfma_pipeline_DW01_inc_0
+compress_group                      303.9120      0.4      4.2000      0.0000  0.0000  compressor3_2_group
+compress_group/genblk1[0].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_902
+compress_group/genblk1[10].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_892
+compress_group/genblk1[11].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_891
+compress_group/genblk1[12].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_890
+compress_group/genblk1[13].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_889
+compress_group/genblk1[14].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_888
+compress_group/genblk1[15].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_887
+compress_group/genblk1[16].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_886
+compress_group/genblk1[17].compress
+                                      5.0400      0.0      5.0400      0.0000  0.0000  compress3_2_885
+compress_group/genblk1[18].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_884
+compress_group/genblk1[19].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_883
+compress_group/genblk1[1].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_901
+compress_group/genblk1[20].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_882
+compress_group/genblk1[21].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_881
+compress_group/genblk1[22].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_880
+compress_group/genblk1[23].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_879
+compress_group/genblk1[24].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_878
+compress_group/genblk1[25].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_877
+compress_group/genblk1[26].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_876
+compress_group/genblk1[27].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_875
+compress_group/genblk1[28].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_874
+compress_group/genblk1[29].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_873
+compress_group/genblk1[2].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_900
+compress_group/genblk1[30].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_872
+compress_group/genblk1[31].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_871
+compress_group/genblk1[32].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_870
+compress_group/genblk1[33].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_869
+compress_group/genblk1[34].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_868
+compress_group/genblk1[35].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_867
+compress_group/genblk1[36].compress
+                                      4.7040      0.0      4.7040      0.0000  0.0000  compress3_2_866
+compress_group/genblk1[37].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_865
+compress_group/genblk1[38].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_864
+compress_group/genblk1[39].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_863
+compress_group/genblk1[3].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_899
+compress_group/genblk1[40].compress
+                                      5.3760      0.0      5.3760      0.0000  0.0000  compress3_2_862
+compress_group/genblk1[41].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_861
+compress_group/genblk1[42].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_860
+compress_group/genblk1[43].compress
+                                      5.0400      0.0      5.0400      0.0000  0.0000  compress3_2_859
+compress_group/genblk1[44].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_858
+compress_group/genblk1[45].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_857
+compress_group/genblk1[46].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_856
+compress_group/genblk1[47].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_855
+compress_group/genblk1[48].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_854
+compress_group/genblk1[49].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_853
+compress_group/genblk1[4].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_898
+compress_group/genblk1[50].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_852
+compress_group/genblk1[51].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_851
+compress_group/genblk1[52].compress
+                                      3.8640      0.0      3.8640      0.0000  0.0000  compress3_2_850
+compress_group/genblk1[53].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_849
+compress_group/genblk1[54].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_848
+compress_group/genblk1[55].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_847
+compress_group/genblk1[56].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_846
+compress_group/genblk1[57].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_845
+compress_group/genblk1[58].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_844
+compress_group/genblk1[59].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_843
+compress_group/genblk1[5].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_897
+compress_group/genblk1[60].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_842
+compress_group/genblk1[61].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_841
+compress_group/genblk1[62].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_840
+compress_group/genblk1[63].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_839
+compress_group/genblk1[64].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_838
+compress_group/genblk1[65].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_837
+compress_group/genblk1[66].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_836
+compress_group/genblk1[67].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_835
+compress_group/genblk1[68].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_834
+compress_group/genblk1[69].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_833
+compress_group/genblk1[6].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_896
+compress_group/genblk1[70].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_832
+compress_group/genblk1[71].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_831
+compress_group/genblk1[72].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_830
+compress_group/genblk1[73].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_829
+compress_group/genblk1[74].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_828
+compress_group/genblk1[75].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_827
+compress_group/genblk1[76].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_826
+compress_group/genblk1[77].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_825
+compress_group/genblk1[78].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_824
+compress_group/genblk1[7].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_895
+compress_group/genblk1[8].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_894
+compress_group/genblk1[9].compress
+                                      3.6960      0.0      3.6960      0.0000  0.0000  compress3_2_893
+lzc                                 197.5680      0.2     80.8080    116.7600  0.0000  LZC
+mul_shift                         10914.4561     13.4   6210.2880      0.0000  0.0000  shifter
+mul_shift/u1                        492.5760      0.6     16.4640      0.0000  0.0000  com_c_8
+mul_shift/u1/add_0_root_add_10_ni   476.1120      0.6    476.1120      0.0000  0.0000  com_c_8_DW01_inc_1
+mul_shift/u2                        505.6800      0.6     16.8000      0.0000  0.0000  com_c_7
+mul_shift/u2/add_0_root_add_10_ni   488.8800      0.6    488.8800      0.0000  0.0000  com_c_7_DW01_inc_1
+mul_shift/u3                        495.6000      0.6     16.1280      0.0000  0.0000  com_c_6
+mul_shift/u3/add_0_root_add_10_ni   479.4720      0.6    479.4720      0.0000  0.0000  com_c_6_DW01_inc_1
+mul_shift/u4                        517.2720      0.6     16.4640      0.0000  0.0000  com_c_5
+mul_shift/u4/add_0_root_add_10_ni   500.8080      0.6    500.8080      0.0000  0.0000  com_c_5_DW01_inc_1
+mul_shift/u5                        643.7760      0.8     24.1920      0.0000  0.0000  com_c_4
+mul_shift/u5/add_0_root_add_10_ni   619.5840      0.8    619.5840      0.0000  0.0000  com_c_4_DW01_inc_2
+mul_shift/u6                        526.6800      0.6     18.3120      0.0000  0.0000  com_c_3
+mul_shift/u6/add_0_root_add_10_ni   508.3680      0.6    508.3680      0.0000  0.0000  com_c_3_DW01_inc_1
+mul_shift/u7                        491.5680      0.6     16.4640      0.0000  0.0000  com_c_2
+mul_shift/u7/add_0_root_add_10_ni   475.1040      0.6    475.1040      0.0000  0.0000  com_c_2_DW01_inc_1
+mul_shift/u8                        537.0960      0.7     16.4640      0.0000  0.0000  com_c_1
+mul_shift/u8/add_0_root_add_10_ni   520.6320      0.6    520.6320      0.0000  0.0000  com_c_1_DW01_inc_1
+mul_shift/u9                        493.9200      0.6     16.1280      0.0000  0.0000  com_c_0
+mul_shift/u9/add_0_root_add_10_ni   477.7920      0.6    477.7920      0.0000  0.0000  com_c_0_DW01_inc_1
+multp_1                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8
+multp_1/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_23_DW01_inc_216
+multp_1/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_5_DW01_inc_198
+multp_1/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_3_DW01_inc_196
+multp_1/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_1_DW01_inc_194
+multp_1/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_21_DW01_inc_214
+multp_1/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_19_DW01_inc_212
+multp_1/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_17_DW01_inc_210
+multp_1/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_15_DW01_inc_208
+multp_1/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_13_DW01_inc_206
+multp_1/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_11_DW01_inc_204
+multp_1/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_9_DW01_inc_202
+multp_1/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_7_DW01_inc_200
+multp_1/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_22_DW01_inc_215
+multp_1/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_4_DW01_inc_197
+multp_1/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_2_DW01_inc_195
+multp_1/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_0_DW01_inc_193
+multp_1/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_20_DW01_inc_213
+multp_1/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_18_DW01_inc_211
+multp_1/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_16_DW01_inc_209
+multp_1/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_14_DW01_inc_207
+multp_1/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_12_DW01_inc_205
+multp_1/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_10_DW01_inc_203
+multp_1/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_8_DW01_inc_201
+multp_1/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_8_DW01_inc_6_DW01_inc_199
+multp_2                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7
+multp_2/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_23_DW01_inc_192
+multp_2/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_5_DW01_inc_174
+multp_2/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_3_DW01_inc_172
+multp_2/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_1_DW01_inc_170
+multp_2/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_21_DW01_inc_190
+multp_2/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_19_DW01_inc_188
+multp_2/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_17_DW01_inc_186
+multp_2/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_15_DW01_inc_184
+multp_2/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_13_DW01_inc_182
+multp_2/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_11_DW01_inc_180
+multp_2/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_9_DW01_inc_178
+multp_2/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_7_DW01_inc_176
+multp_2/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_22_DW01_inc_191
+multp_2/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_4_DW01_inc_173
+multp_2/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_2_DW01_inc_171
+multp_2/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_0_DW01_inc_169
+multp_2/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_20_DW01_inc_189
+multp_2/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_18_DW01_inc_187
+multp_2/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_16_DW01_inc_185
+multp_2/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_14_DW01_inc_183
+multp_2/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_12_DW01_inc_181
+multp_2/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_10_DW01_inc_179
+multp_2/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_8_DW01_inc_177
+multp_2/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_7_DW01_inc_6_DW01_inc_175
+multp_3                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6
+multp_3/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_23_DW01_inc_168
+multp_3/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_5_DW01_inc_150
+multp_3/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_3_DW01_inc_148
+multp_3/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_1_DW01_inc_146
+multp_3/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_21_DW01_inc_166
+multp_3/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_19_DW01_inc_164
+multp_3/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_17_DW01_inc_162
+multp_3/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_15_DW01_inc_160
+multp_3/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_13_DW01_inc_158
+multp_3/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_11_DW01_inc_156
+multp_3/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_9_DW01_inc_154
+multp_3/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_7_DW01_inc_152
+multp_3/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_22_DW01_inc_167
+multp_3/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_4_DW01_inc_149
+multp_3/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_2_DW01_inc_147
+multp_3/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_0_DW01_inc_145
+multp_3/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_20_DW01_inc_165
+multp_3/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_18_DW01_inc_163
+multp_3/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_16_DW01_inc_161
+multp_3/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_14_DW01_inc_159
+multp_3/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_12_DW01_inc_157
+multp_3/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_10_DW01_inc_155
+multp_3/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_8_DW01_inc_153
+multp_3/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_6_DW01_inc_6_DW01_inc_151
+multp_4                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5
+multp_4/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_23_DW01_inc_144
+multp_4/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_5_DW01_inc_126
+multp_4/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_3_DW01_inc_124
+multp_4/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_1_DW01_inc_122
+multp_4/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_21_DW01_inc_142
+multp_4/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_19_DW01_inc_140
+multp_4/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_17_DW01_inc_138
+multp_4/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_15_DW01_inc_136
+multp_4/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_13_DW01_inc_134
+multp_4/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_11_DW01_inc_132
+multp_4/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_9_DW01_inc_130
+multp_4/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_7_DW01_inc_128
+multp_4/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_22_DW01_inc_143
+multp_4/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_4_DW01_inc_125
+multp_4/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_2_DW01_inc_123
+multp_4/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_0_DW01_inc_121
+multp_4/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_20_DW01_inc_141
+multp_4/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_18_DW01_inc_139
+multp_4/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_16_DW01_inc_137
+multp_4/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_14_DW01_inc_135
+multp_4/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_12_DW01_inc_133
+multp_4/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_10_DW01_inc_131
+multp_4/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_8_DW01_inc_129
+multp_4/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_5_DW01_inc_6_DW01_inc_127
+multp_5                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4
+multp_5/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_23_DW01_inc_120
+multp_5/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_5_DW01_inc_102
+multp_5/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_3_DW01_inc_100
+multp_5/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_1_DW01_inc_98
+multp_5/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_21_DW01_inc_118
+multp_5/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_19_DW01_inc_116
+multp_5/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_17_DW01_inc_114
+multp_5/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_15_DW01_inc_112
+multp_5/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_13_DW01_inc_110
+multp_5/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_11_DW01_inc_108
+multp_5/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_9_DW01_inc_106
+multp_5/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_7_DW01_inc_104
+multp_5/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_22_DW01_inc_119
+multp_5/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_4_DW01_inc_101
+multp_5/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_2_DW01_inc_99
+multp_5/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_0_DW01_inc_97
+multp_5/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_20_DW01_inc_117
+multp_5/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_18_DW01_inc_115
+multp_5/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_16_DW01_inc_113
+multp_5/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_14_DW01_inc_111
+multp_5/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_12_DW01_inc_109
+multp_5/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_10_DW01_inc_107
+multp_5/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_8_DW01_inc_105
+multp_5/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_4_DW01_inc_6_DW01_inc_103
+multp_6                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3
+multp_6/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_23_DW01_inc_96
+multp_6/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_5_DW01_inc_78
+multp_6/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_3_DW01_inc_76
+multp_6/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_1_DW01_inc_74
+multp_6/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_21_DW01_inc_94
+multp_6/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_19_DW01_inc_92
+multp_6/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_17_DW01_inc_90
+multp_6/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_15_DW01_inc_88
+multp_6/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_13_DW01_inc_86
+multp_6/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_11_DW01_inc_84
+multp_6/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_9_DW01_inc_82
+multp_6/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_7_DW01_inc_80
+multp_6/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_22_DW01_inc_95
+multp_6/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_4_DW01_inc_77
+multp_6/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_2_DW01_inc_75
+multp_6/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_0_DW01_inc_73
+multp_6/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_20_DW01_inc_93
+multp_6/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_18_DW01_inc_91
+multp_6/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_16_DW01_inc_89
+multp_6/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_14_DW01_inc_87
+multp_6/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_12_DW01_inc_85
+multp_6/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_10_DW01_inc_83
+multp_6/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_8_DW01_inc_81
+multp_6/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_3_DW01_inc_6_DW01_inc_79
+multp_7                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2
+multp_7/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_23_DW01_inc_72
+multp_7/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_5_DW01_inc_54
+multp_7/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_3_DW01_inc_52
+multp_7/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_1_DW01_inc_50
+multp_7/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_21_DW01_inc_70
+multp_7/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_19_DW01_inc_68
+multp_7/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_17_DW01_inc_66
+multp_7/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_15_DW01_inc_64
+multp_7/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_13_DW01_inc_62
+multp_7/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_11_DW01_inc_60
+multp_7/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_9_DW01_inc_58
+multp_7/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_7_DW01_inc_56
+multp_7/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_22_DW01_inc_71
+multp_7/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_4_DW01_inc_53
+multp_7/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_2_DW01_inc_51
+multp_7/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_0_DW01_inc_49
+multp_7/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_20_DW01_inc_69
+multp_7/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_18_DW01_inc_67
+multp_7/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_16_DW01_inc_65
+multp_7/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_14_DW01_inc_63
+multp_7/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_12_DW01_inc_61
+multp_7/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_10_DW01_inc_59
+multp_7/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_8_DW01_inc_57
+multp_7/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_2_DW01_inc_6_DW01_inc_55
+multp_8                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1
+multp_8/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_23_DW01_inc_48
+multp_8/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_5_DW01_inc_30
+multp_8/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_3_DW01_inc_28
+multp_8/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_1_DW01_inc_26
+multp_8/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_21_DW01_inc_46
+multp_8/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_19_DW01_inc_44
+multp_8/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_17_DW01_inc_42
+multp_8/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_15_DW01_inc_40
+multp_8/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_13_DW01_inc_38
+multp_8/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_11_DW01_inc_36
+multp_8/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_9_DW01_inc_34
+multp_8/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_7_DW01_inc_32
+multp_8/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_22_DW01_inc_47
+multp_8/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_4_DW01_inc_29
+multp_8/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_2_DW01_inc_27
+multp_8/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_0_DW01_inc_25
+multp_8/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_20_DW01_inc_45
+multp_8/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_18_DW01_inc_43
+multp_8/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_16_DW01_inc_41
+multp_8/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_14_DW01_inc_39
+multp_8/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_12_DW01_inc_37
+multp_8/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_10_DW01_inc_35
+multp_8/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_8_DW01_inc_33
+multp_8/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_1_DW01_inc_6_DW01_inc_31
+multp_9                            5212.8720      6.4   3085.9920      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0
+multp_9/add_103                     115.0800      0.1    115.0800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_23_DW01_inc_24
+multp_9/add_103_I10                  69.7200      0.1     69.7200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_5_DW01_inc_6
+multp_9/add_103_I11                  64.6800      0.1     64.6800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_3_DW01_inc_4
+multp_9/add_103_I12                  59.6400      0.1     59.6400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_1_DW01_inc_2
+multp_9/add_103_I2                  110.0400      0.1    110.0400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_21_DW01_inc_22
+multp_9/add_103_I3                  105.0000      0.1    105.0000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_19_DW01_inc_20
+multp_9/add_103_I4                   99.9600      0.1     99.9600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_17_DW01_inc_18
+multp_9/add_103_I5                   94.9200      0.1     94.9200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_15_DW01_inc_16
+multp_9/add_103_I6                   89.8800      0.1     89.8800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_13_DW01_inc_14
+multp_9/add_103_I7                   84.8400      0.1     84.8400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_11_DW01_inc_12
+multp_9/add_103_I8                   79.8000      0.1     79.8000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_9_DW01_inc_10
+multp_9/add_103_I9                   74.7600      0.1     74.7600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_7_DW01_inc_8
+multp_9/add_105                     117.6000      0.1    117.6000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_22_DW01_inc_23
+multp_9/add_105_I10                  72.2400      0.1     72.2400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_4_DW01_inc_5
+multp_9/add_105_I11                  67.2000      0.1     67.2000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_2_DW01_inc_3
+multp_9/add_105_I12                  62.1600      0.1     62.1600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_0_DW01_inc_1
+multp_9/add_105_I2                  112.5600      0.1    112.5600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_20_DW01_inc_21
+multp_9/add_105_I3                  107.5200      0.1    107.5200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_18_DW01_inc_19
+multp_9/add_105_I4                  102.4800      0.1    102.4800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_16_DW01_inc_17
+multp_9/add_105_I5                   97.4400      0.1     97.4400      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_14_DW01_inc_15
+multp_9/add_105_I6                   92.4000      0.1     92.4000      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_12_DW01_inc_13
+multp_9/add_105_I7                   87.3600      0.1     87.3600      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_10_DW01_inc_11
+multp_9/add_105_I8                   82.3200      0.1     82.3200      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_8_DW01_inc_9
+multp_9/add_105_I9                   77.2800      0.1     77.2800      0.0000  0.0000  my_multp_a_width24_b_width24_out_width48_0_DW01_inc_6_DW01_inc_7
+normalize_shift                     518.9520      0.6    468.0480      0.0000  0.0000  normalize
+normalize_shift/add_20               24.3600      0.0     24.3600      0.0000  0.0000  normalize_DW01_add_0_DW01_add_12
+normalize_shift/sub_18_2             26.5440      0.0     26.5440      0.0000  0.0000  normalize_DW01_sub_0_DW01_sub_22
+pipe1                             10612.0560     13.0   1138.3680   9473.6880  0.0000  reg_pipeline1
+pipe2                              1719.3120      2.1    157.5840   1561.7280  0.0000  reg_pipeline2
+pipe3                               315.8400      0.4     18.6480    294.6720  0.0000  reg_pipeline3
+pipe3/clk_gate_result_p3_reg          2.5200      0.0      0.0000      2.5200  0.0000  SNPS_CLOCK_GATE_HIGH_reg_pipeline3
+sub_1_root_add_232_ni                26.2080      0.0     26.2080      0.0000  0.0000  fpfma_pipeline_DW01_sub_0
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------------------------------------------------------------
+Total                                                  68076.2876  13571.3760  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+                                       Perc. of
+  Module   Implem.  Count        Area cell area
+  -------- -------  ----- ----------- ---------
+  DW01_add     rpl     10    243.6000      0.3%
+  DW01_inc  pparch      9   4546.7482      5.6%
+  DW01_inc     rpl    217  19335.1147     23.7%
+  DW01_sub     rpl      2     52.7520      0.1%
+  -------- -------  ----- ----------- ---------
+  Total:              238  24178.2149     29.6%
+
+Estimated area of ungrouped synthetic parts
+-------------------------------------------
+                              Estimated  Perc. of
+  Module      Implem.  Count       Area cell area
+  ----------- -------  ----- ---------- ---------
+  DW01_add        rpl      3    68.8800      0.1%
+  DW01_inc        rpl      1    11.7600      0.0%
+  DW01_sub        rpl     23   478.2960      0.6%
+  DW_cmp      apparch     17   505.1762      0.6%
+  DW_leftsh      astr      1   424.8709      0.5%
+  DW_mult_uns apparch      1     4.0320      0.0%
+  DW_rightsh     astr     19  5147.8476      6.3%
+  ----------- -------  ----- ---------- ---------
+  Total:                  65  6640.8627      8.1%
+
+Total synthetic cell area:              30819.0777  37.7%  (estimated)
+
+1

@@ -1,0 +1,23 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
++access+wrc
++incdir+../src/verilog
+-ACCESS
++wrc
+-timescale
+1ns/1ps
+-MESSAGES
+t_fpfma_pipeline
+-XLMODE
+./INCA_libs/irun.lnx8664.15.20.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.lnx8664.15.20.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.lnx8664.15.20.nc/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

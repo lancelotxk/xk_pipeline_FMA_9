@@ -1,0 +1,179 @@
+irun(64): 15.20-p001: (c) Copyright 1995-2016 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-p001: Started on Apr 05, 2021 at 14:50:01 CST
+irun
+	-f rtlsim.f
+		../src/verilog/unpack.v
+		../src/verilog/adder_pp.v
+		../src/verilog/adder.v
+		../src/verilog/align.v
+		../src/verilog/complemmet_c.v
+		../src/verilog/compress3_2.v
+		../src/verilog/compress4_2.v
+		../src/verilog/compress6_2.v
+		../src/verilog/compressor3_2_group.v
+		../src/verilog/my_multp.v
+		../src/verilog/exponentComparison.v
+		../src/verilog/SAD_6_v2.v
+		../src/verilog/LZC.v
+		../src/verilog/normalize.v
+		../src/verilog/SAD_6.v
+		../src/verilog/shifter.v
+		../src/verilog/fpfma_pipeline.v
+		../src/verilog/CLA_adder.v
+		../src/verilog/carry_select_adder.v
+		../src/testbench/t_fpfma_pipeline.v
+	+access+wrc
+	-timescale 1ns/1ps
+	+incdir+../src/verilog
+	-top t_fpfma_pipeline
+file: ../src/verilog/unpack.v
+	module worklib.unpack:v
+		errors: 0, warnings: 0
+file: ../src/verilog/adder_pp.v
+	module worklib.adder_pp:v
+		errors: 0, warnings: 0
+file: ../src/verilog/adder.v
+	module worklib.ahead_adder:v
+		errors: 0, warnings: 0
+	module worklib.adder:v
+		errors: 0, warnings: 0
+file: ../src/verilog/align.v
+	module worklib.align:v
+		errors: 0, warnings: 0
+file: ../src/verilog/complemmet_c.v
+	module worklib.com_c:v
+		errors: 0, warnings: 0
+file: ../src/verilog/compress3_2.v
+	module worklib.compress3_2:v
+		errors: 0, warnings: 0
+file: ../src/verilog/compress4_2.v
+	module worklib.compress4_2:v
+		errors: 0, warnings: 0
+file: ../src/verilog/compress6_2.v
+	module worklib.compress6_2:v
+		errors: 0, warnings: 0
+file: ../src/verilog/compressor3_2_group.v
+	module worklib.compressor3_2_group:v
+		errors: 0, warnings: 0
+file: ../src/verilog/my_multp.v
+	module worklib.my_multp:v
+		errors: 0, warnings: 0
+file: ../src/verilog/exponentComparison.v
+	module worklib.exponentComparison:v
+		errors: 0, warnings: 0
+file: ../src/verilog/SAD_6_v2.v
+	module worklib.SAD_6_v2:v
+		errors: 0, warnings: 0
+file: ../src/verilog/LZC.v
+	module worklib.LZC:v
+		errors: 0, warnings: 0
+file: ../src/verilog/normalize.v
+	module worklib.normalize:v
+		errors: 0, warnings: 0
+file: ../src/verilog/SAD_6.v
+	module worklib.SAD_6:v
+		errors: 0, warnings: 0
+file: ../src/verilog/shifter.v
+	module worklib.shifter:v
+		errors: 0, warnings: 0
+file: ../src/verilog/fpfma_pipeline.v
+	module worklib.fpfma_pipeline:v
+		errors: 0, warnings: 0
+	module worklib.reg_pipeline1:v
+		errors: 0, warnings: 0
+	module worklib.reg_pipeline2:v
+		errors: 0, warnings: 0
+	module worklib.reg_pipeline3:v
+		errors: 0, warnings: 0
+file: ../src/verilog/CLA_adder.v
+	module worklib.CLA_adder:v
+		errors: 0, warnings: 0
+file: ../src/verilog/carry_select_adder.v
+	module worklib.carry_select_adder:v
+		errors: 0, warnings: 0
+file: ../src/testbench/t_fpfma_pipeline.v
+      $fscanf(fd, "%x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x %x", A1,A2,A3,A4,A5,A6,A7,A8,A9,B1,B2,B3,B4,B5,B6,B7,B8,B9,C, x_ideal);
+            |
+ncvlog: *W,NOSYST (../src/testbench/t_fpfma_pipeline.v,35|12): System function '$fscanf' invoked as a task. Return value will be ignored.
+	module worklib.t_fpfma_pipeline:v
+		errors: 0, warnings: 1
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+unpack PACK7(.A(),.B(),.C(C),.aSign(), .aExp(), .aSig(),.bSign(), .bExp(), .bSig(),.cSign(cSign), .cExp(cExp), 
+           |
+ncelab: *W,CUVWSP (../src/verilog/fpfma_pipeline.v,47|11): 2 output ports were not connected:
+ncelab: (../src/verilog/unpack.v,3): aiszero
+ncelab: (../src/verilog/unpack.v,3): biszero
+
+	Top level design units:
+		t_fpfma_pipeline
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.CLA_adder:v <0x47ccad52>
+			streams:   8, words:  5517
+		worklib.CLA_adder:v <0x5761776f>
+			streams:   8, words:  5238
+		worklib.LZC:v <0x0b5546f7>
+			streams:   7, words:  4737
+		worklib.SAD_6:v <0x7f70cbc3>
+			streams:  13, words:  4949
+		worklib.SAD_6_v2:v <0x77158475>
+			streams:  13, words:  4358
+		worklib.adder_pp:v <0x39c0b25e>
+			streams:   5, words:   876
+		worklib.align:v <0x35108549>
+			streams:   2, words:  1050
+		worklib.carry_select_adder:v <0x73b3583f>
+			streams:   7, words:  1760
+		worklib.com_c:v <0x396d0b54>
+			streams:   2, words:   306
+		worklib.compress3_2:v <0x3382845c>
+			streams:   0, words:     0
+		worklib.compress3_2:v <0x6c3c1b0d>
+			streams:   1, words:   367
+		worklib.compress4_2:v <0x3442eca1>
+			streams:   0, words:     0
+		worklib.compressor3_2_group:v <0x7ca7e6e5>
+			streams:   3, words:  1619
+		worklib.exponentComparison:v <0x5c456f77>
+			streams:  32, words:  8855
+		worklib.fpfma_pipeline:v <0x0b9044d6>
+			streams:  19, words:  9115
+		worklib.my_multp:v <0x3054bbe8>
+			streams:   9, words: 16406
+		worklib.normalize:v <0x08a49536>
+			streams:   3, words:  1072
+		worklib.reg_pipeline1:v <0x10d32754>
+			streams:   3, words: 13291
+		worklib.reg_pipeline2:v <0x4c6d8b82>
+			streams:   3, words:  2072
+		worklib.reg_pipeline3:v <0x438c3a1d>
+			streams:   2, words:   557
+		worklib.shifter:v <0x5ef157fc>
+			streams:  56, words: 30560
+		worklib.t_fpfma_pipeline:v <0x42c7dfc3>
+			streams:  27, words: 11865
+		worklib.unpack:v <0x368976c7>
+			streams:  11, words:  2951
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:               1154      21
+		Registers:              247     115
+		Scalar wires:          1954       -
+		Expanded wires:        1435      30
+		Vectored wires:         761       -
+		Always blocks:           38      20
+		Initial blocks:           2       2
+		Cont. assignments:      772     178
+		Pseudo assignments:     525      41
+		Simulation timescale:   1ps
+	Writing initial simulation snapshot: worklib.t_fpfma_pipeline:v
+Loading snapshot worklib.t_fpfma_pipeline:v .................... Done
+ncsim> source /usr/edatools/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+Simulation stopped via $stop(1) at time 100005 NS + 0
+../src/testbench/t_fpfma_pipeline.v:22     #100000 $stop;
+ncsim> exit
+TOOL:	irun(64)	15.20-p001: Exiting on Apr 05, 2021 at 14:50:09 CST  (total: 00:00:08)

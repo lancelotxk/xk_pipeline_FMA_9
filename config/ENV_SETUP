@@ -1,0 +1,57 @@
+#!/bin/csh -f
+
+echo "------------------------- Welcome to RSB test!-------------------------------- "
+echo "-- This ENV_SETUP will help to set up basic environment for you to work -- "
+
+###setup incisive environment variables
+setenv CADHOME           /usr/edatools
+setenv LANG              C
+setenv CDS_LOAD_ENV      CWD
+setenv CDS               $CADHOME/INCISIVE152
+setenv CDS_LIC_FILE      $CADHOME/license/license.inc.dat
+setenv CDS_LIC_ONLY      1
+setenv CDS_AUTO_64BIT    ALL
+setenv CDS_ENABLE_VMS    1
+setenv PATH              ${PATH}:${CDS}/bin:${CDS}/tools/bin:${CDS}/tools/vtools/vfault/bin
+setenv LD_LIBRARY_PATH   $CDS/tools/lib/64bit:$CDS/tools/lib
+###setup verdi
+#setenv  VERDI_HOME       $CADHOME/verdi_vL-2016.06-1
+#setenv  NOVAS_HOME       $CADHOME/verdi_vL-2016.06-1
+#setenv  LD_LIBRARY_PATH  ${LD_LIBRARY_PATH}:${NOVAS_HOME}/share/PLI/VCS/LINUX64
+#setenv  PATH             $NOVAS_HOME/bin:$PATH
+#setenv  CDS_LIC_FILE     ${CDS_LIC_FILE}:$CADHOME/license/license.cal.dat
+#setenv  CDS_LIC_FILE     ${CDS_LIC_FILE}:$CADHOME/license/license.ic61.dat
+#setenv  CDS_LIC_FILE     ${CDS_LIC_FILE}:$CADHOME/license/license.stra.dat
+###setup workspace path and variables
+setenv WORK_SPACE              `pwd`
+echo  "WORK_SPACE: $WORK_SPACE"
+setenv BLOCK_HOME        $WORK_SPACE/blocks
+setenv CHIP_HOME         $WORK_SPACE/chip
+setenv TB_HOME           $WORK_SPACE/testbench
+setenv WORKSPACE         $WORK_SPACE
+setenv PROJECT_DIR       $WORK_SPACE
+setenv PRJ_DIR           $WORK_SPACE
+setenv VECTOR_NAME       sanity
+setenv PATTERN_NAME      sanity
+setenv PATH              ${PATH}:$WORK_SPACE/testbench/bin
+#set prompt="%n@%m: %~ $"
+set prompt = "`whoami`@`hostname`: $cwd > "
+alias cd 'cd \!*;set prompt = "`whoami`@`hostname`: $cwd > ";ls'
+# commands alias
+alias find_ 'find -name "*" | xargs egrep \!*'
+alias ll 'ls -l'
+alias la 'ls -a'
+alias .. 'cd ..'
+alias ... 'cd ../..'
+alias .... 'cd ../../..'
+alias ./. 'cd .'
+alias ../. 'cd ..'
+alias ./.. 'cd ..'
+alias ../.. 'cd ../..'
+alias ../../.. 'cd ../../..'
+alias v  'vim'
+alias gc 'gedit \!* &'
+alias h 'history'
+alias hgp 'history | grep'
+alias lsgp 'ls | grep'
+

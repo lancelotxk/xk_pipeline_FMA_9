@@ -1,0 +1,2147 @@
+Warning: Design 'fpfma_pipeline' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : fpfma_pipeline
+Version: P-2019.03-SP5-4
+Date   : Mon Apr  5 14:52:39 2021
+****************************************
+
+Operating Conditions: ssg0p9v0c   Library: tcbn28hpcplusbwp12t30p140ssg0p9v0c
+Wire Load Model Mode: segmented
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062532008
+                                                                 0.132872134 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872134 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872134 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895901 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476209 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196628 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543997
+                                                                 0.217740625 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040443957
+                                                                 0.258184582 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033021569
+                                                                 0.291206151 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291206151 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349542588 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349542588 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390856653 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404451758 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423071057 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464742869 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506511688 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506511688 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506511688 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534044385 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534044385 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534044385 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534044385 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534044385 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567419648 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598719954 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598719954 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598719954 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598719954 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626774549 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657297850 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657297850 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657297850 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691758513 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724134207 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724134207 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724134207 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724134207 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724134207 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724134207 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759230256 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791610479 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791610479 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791610479 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791610479 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826706767 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859086871 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859086871 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859086871 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894183159 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921992183 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921992183 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921992183 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921992183 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921992183 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921992183 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921992183 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954932928 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994527578 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994527578 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994527578 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994527578 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994527578 r
+  data arrival time                                              0.994527578
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994527578
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046122372
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062531948
+                                                                 0.132872075 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872075 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872075 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895841 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476149 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196568 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543818
+                                                                 0.217740387 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040443957
+                                                                 0.258184344 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033021569
+                                                                 0.291205913 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291205913 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349542350 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349542350 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390856415 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404451519 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423070818 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464742631 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506511450 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506511450 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506511450 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534044147 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534044147 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534044147 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534044147 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534044147 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567419410 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598719716 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598719716 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598719716 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598719716 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626774311 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657297611 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657297611 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657297611 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691758275 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724133968 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724133968 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724133968 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724133968 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724133968 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724133968 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759230018 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791610241 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791610241 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791610241 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791610241 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826706529 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859086633 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859086633 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859086633 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894182920 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921991944 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921991944 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921991944 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921991944 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921991944 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921991944 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921991944 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954932690 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994527340 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994527340 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994527340 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994527340 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994527340 r
+  data arrival time                                              0.994527340
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994527340
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046122134
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062532008
+                                                                 0.132872134 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872134 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872134 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895901 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476209 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196628 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543997
+                                                                 0.217740625 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040442407
+                                                                 0.258183032 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033021569
+                                                                 0.291204602 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291204602 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349541038 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349541038 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390855104 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404450208 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423069507 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464741319 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506510139 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506510139 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506510139 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534042835 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534042835 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534042835 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534042835 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534042835 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567418098 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598718405 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598718405 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598718405 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598718405 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626773000 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657296300 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657296300 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657296300 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691756964 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724132657 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724132657 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724132657 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724132657 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724132657 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724132657 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759228706 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791608930 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791608930 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791608930 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791608930 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826705217 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859085321 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859085321 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859085321 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894181609 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921990633 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921990633 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921990633 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921990633 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921990633 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921990633 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921990633 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954931378 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994526029 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994526029 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994526029 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994526029 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994526029 r
+  data arrival time                                              0.994526029
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994526029
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046120822
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062531948
+                                                                 0.132872075 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872075 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872075 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895841 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476149 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196568 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543818
+                                                                 0.217740387 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040442407
+                                                                 0.258182794 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033021569
+                                                                 0.291204363 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291204363 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349540800 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349540800 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390854865 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404449970 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423069268 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464741081 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506509900 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506509900 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506509900 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534042597 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534042597 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534042597 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534042597 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534042597 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567417860 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598718166 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598718166 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598718166 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598718166 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626772761 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657296062 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657296062 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657296062 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691756725 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724132419 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724132419 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724132419 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724132419 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724132419 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724132419 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759228468 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791608691 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791608691 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791608691 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791608691 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826704979 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859085083 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859085083 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859085083 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894181371 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921990395 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921990395 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921990395 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921990395 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921990395 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921990395 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921990395 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954931140 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994525790 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994525790 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994525790 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994525790 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994525790 r
+  data arrival time                                              0.994525790
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994525790
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046120584
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062531948
+                                                                 0.132872075 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872075 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872075 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895841 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476149 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196568 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543997
+                                                                 0.217740566 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040443957
+                                                                 0.258184522 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033019722
+                                                                 0.291204244 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291204244 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349540681 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349540681 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390854746 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404449850 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423069149 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464740962 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506509781 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506509781 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506509781 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534042478 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534042478 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534042478 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534042478 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534042478 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567417741 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598718047 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598718047 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598718047 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598718047 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626772642 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657295942 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657295942 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657295942 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691756606 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724132299 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724132299 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724132299 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724132299 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724132299 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724132299 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759228349 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791608572 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791608572 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791608572 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791608572 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826704860 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859084964 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859084964 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859084964 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894181252 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921990275 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921990275 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921990275 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921990275 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921990275 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921990275 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921990275 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954931021 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994525671 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994525671 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994525671 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994525671 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994525671 r
+  data arrival time                                              0.994525671
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994525671
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046120465
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062531948
+                                                                 0.132872075 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872075 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872075 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895841 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476149 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196568 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543878
+                                                                 0.217740446 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040443957
+                                                                 0.258184403 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033019722
+                                                                 0.291204125 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291204125 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349540561 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349540561 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390854627 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404449731 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423069030 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464740843 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506509662 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506509662 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506509662 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534042358 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534042358 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534042358 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534042358 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534042358 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567417622 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598717928 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598717928 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598717928 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598717928 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626772523 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657295823 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657295823 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657295823 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691756487 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724132180 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724132180 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724132180 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724132180 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724132180 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724132180 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759228230 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791608453 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791608453 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791608453 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791608453 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826704741 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859084845 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859084845 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859084845 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894181132 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921990156 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921990156 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921990156 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921990156 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921990156 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921990156 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921990156 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954930902 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994525552 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994525552 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994525552 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994525552 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994525552 r
+  data arrival time                                              0.994525552
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994525552
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046120346
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062531948
+                                                                 0.132872075 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872075 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872075 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895841 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476149 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196568 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543997
+                                                                 0.217740566 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040443957
+                                                                 0.258184522 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033018649
+                                                                 0.291203171 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291203171 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349539608 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349539608 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390853673 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404448777 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423068076 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464739889 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506508708 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506508708 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506508708 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534041405 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534041405 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534041405 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534041405 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534041405 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567416668 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598716974 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598716974 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598716974 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598716974 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626771569 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657294869 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657294869 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657294869 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691755533 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724131227 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724131227 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724131227 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724131227 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724131227 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724131227 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759227276 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791607499 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791607499 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791607499 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791607499 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826703787 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859083891 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859083891 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859083891 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894180179 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921989202 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921989202 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921989202 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921989202 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921989202 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921989202 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921989202 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954929948 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994524598 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994524598 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994524598 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994524598 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994524598 r
+  data arrival time                                              0.994524598
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994524598
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046119392
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062531948
+                                                                 0.132872075 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872075 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872075 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895841 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476149 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196568 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543878
+                                                                 0.217740446 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040443957
+                                                                 0.258184403 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033018649
+                                                                 0.291203052 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291203052 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349539489 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349539489 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390853554 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404448658 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423067957 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464739770 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506508589 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506508589 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506508589 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534041286 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534041286 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534041286 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534041286 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534041286 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567416549 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598716855 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598716855 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598716855 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598716855 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626771450 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657294750 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657294750 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657294750 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691755414 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724131107 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724131107 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724131107 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724131107 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724131107 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724131107 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759227157 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791607380 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791607380 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791607380 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791607380 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826703668 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859083772 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859083772 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859083772 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894180059 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921989083 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921989083 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921989083 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921989083 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921989083 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921989083 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921989083 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954929829 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994524479 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994524479 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994524479 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994524479 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994524479 r
+  data arrival time                                              0.994524479
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994524479
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046119273
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062531948
+                                                                 0.132872075 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872075 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872075 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895841 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476149 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196568 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543997
+                                                                 0.217740566 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040442407
+                                                                 0.258182973 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033019722
+                                                                 0.291202694 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291202694 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349539131 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349539131 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390853196 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404448301 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423067600 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464739412 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506508231 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506508231 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506508231 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534040928 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534040928 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534040928 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534040928 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534040928 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567416191 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598716497 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598716497 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598716497 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598716497 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626771092 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657294393 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657294393 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657294393 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691755056 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724130750 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724130750 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724130750 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724130750 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724130750 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724130750 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759226799 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791607022 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791607022 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791607022 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791607022 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826703310 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859083414 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859083414 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859083414 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894179702 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921988726 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921988726 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921988726 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921988726 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921988726 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921988726 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921988726 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954929471 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994524121 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994524121 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994524121 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994524121 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994524121 r
+  data arrival time                                              0.994524121
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994524121
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046118915
+
+
+  Startpoint: pipe1/shamt_ab5_p1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_DQS)
+  Endpoint: pipe2/sum_p2_reg[24]
+            (rising edge-triggered flip-flop clocked by clk_DQS)
+  Path Group: clk_DQS
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  reg_pipeline1      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  shifter            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  fpfma_pipeline     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  com_c_4_DW01_inc_2 ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_575    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_0            ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  adder_pp           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_161    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_80     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_160    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_470    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  SAD_6_v2           ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_59     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress4_2_29     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_58     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compress3_2_878    ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  compressor3_2_group
+                     ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+  reg_pipeline2      ZeroWireload          tcbn28hpcplusbwp12t30p140ssg0p9v0c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_DQS (rise edge)                           0.000000000
+                                                                 0.000000000
+  clock network delay (propagated)                    0.070340127
+                                                                 0.070340127
+  pipe1/shamt_ab5_p1_reg[0]/CP (DFCNQD4BWP12T30P140)  0.000000000
+                                                                 0.070340127 r
+  pipe1/shamt_ab5_p1_reg[0]/Q (DFCNQD4BWP12T30P140)   0.062531948
+                                                                 0.132872075 r
+  pipe1/shamt_ab5_p1[0] (reg_pipeline1)               0.000000000
+                                                                 0.132872075 r
+  mul_shift/shamt_ab5[0] (shifter)                    0.000000000
+                                                                 0.132872075 r
+  mul_shift/U7/ZN (INVD4BWP12T30P140)                 0.029023767
+                                                                 0.161895841 f
+  mul_shift/U3645/ZN (MUX2ND0BWP12T30P140)            0.028580308
+                                                                 0.190476149 f
+  mul_shift/U3646/ZN (CKND0BWP12T30P140)              0.011720419
+                                                                 0.202196568 r
+  mul_shift/U3647/ZN (MUX2ND0BWP12T30P140)            0.015543878
+                                                                 0.217740446 f
+  mul_shift/U3894/Z (MUX3D0BWP12T30P140)              0.040442407
+                                                                 0.258182853 f
+  mul_shift/U3895/ZN (MUX3ND0BWP12T30P140)            0.033019722
+                                                                 0.291202575 r
+  mul_shift/u5/c[4] (com_c_4)                         0.000000000
+                                                                 0.291202575 r
+  mul_shift/u5/U45/ZN (CKND0BWP12T30P140)             0.058336437
+                                                                 0.349539012 f
+  mul_shift/u5/add_0_root_add_10_ni/A[4] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.349539012 f
+  mul_shift/u5/add_0_root_add_10_ni/U294/ZN (CKND2D1BWP12T30P140)
+                                                      0.041314065
+                                                                 0.390853077 r
+  mul_shift/u5/add_0_root_add_10_ni/U263/ZN (NR2OPTFAD6BWP12T30P140)
+                                                      0.013595104
+                                                                 0.404448181 f
+  mul_shift/u5/add_0_root_add_10_ni/U293/ZN (ND2OPTFAD6BWP12T30P140)
+                                                      0.018619299
+                                                                 0.423067480 r
+  mul_shift/u5/add_0_root_add_10_ni/U298/ZN (NR2OPTFAD16BWP12T30P140)
+                                                      0.041671813
+                                                                 0.464739293 f
+  mul_shift/u5/add_0_root_add_10_ni/U297/ZN (XNR2D0BWP12T30P140)
+                                                      0.041768819
+                                                                 0.506508112 r
+  mul_shift/u5/add_0_root_add_10_ni/SUM[21] (com_c_4_DW01_inc_2)
+                                                      0.000000000
+                                                                 0.506508112 r
+  mul_shift/u5/c_com[21] (com_c_4)                    0.000000000
+                                                                 0.506508112 r
+  mul_shift/U790/Z (AO22D0BWP12T30P140)               0.027532697
+                                                                 0.534040809 r
+  mul_shift/c5[22] (shifter)                          0.000000000
+                                                                 0.534040809 r
+  add/c5[22] (adder_pp)                               0.000000000
+                                                                 0.534040809 r
+  add/SAD3/in2[22] (SAD_6_0)                          0.000000000
+                                                                 0.534040809 r
+  add/SAD3/genblk1[22].m1/in[1] (compress3_2_575)     0.000000000
+                                                                 0.534040809 r
+  add/SAD3/genblk1[22].m1/U3/Z (CKXOR2D0BWP12T30P140) 0.033375263
+                                                                 0.567416072 f
+  add/SAD3/genblk1[22].m1/U2/Z (AO22D0BWP12T30P140)   0.031300306
+                                                                 0.598716378 f
+  add/SAD3/genblk1[22].m1/c (compress3_2_575)         0.000000000
+                                                                 0.598716378 f
+  add/SAD3/genblk1[23].genblk1.m3/in[1] (compress4_2_80)
+                                                      0.000000000
+                                                                 0.598716378 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/in[0] (compress3_2_161)
+                                                      0.000000000
+                                                                 0.598716378 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.028054595
+                                                                 0.626770973 r
+  add/SAD3/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D1BWP12T30P140)
+                                                      0.030523300
+                                                                 0.657294273 f
+  add/SAD3/genblk1[23].genblk1.m3/u1/s (compress3_2_161)
+                                                      0.000000000
+                                                                 0.657294273 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_160)
+                                                      0.000000000
+                                                                 0.657294273 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.034460664
+                                                                 0.691754937 r
+  add/SAD3/genblk1[23].genblk1.m3/u2/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032375693
+                                                                 0.724130630 f
+  add/SAD3/genblk1[23].genblk1.m3/u2/s (compress3_2_160)
+                                                      0.000000000
+                                                                 0.724130630 f
+  add/SAD3/genblk1[23].genblk1.m3/sum (compress4_2_80)
+                                                      0.000000000
+                                                                 0.724130630 f
+  add/SAD3/sum[23] (SAD_6_0)                          0.000000000
+                                                                 0.724130630 f
+  add/SAD4/in5[23] (SAD_6_v2)                         0.000000000
+                                                                 0.724130630 f
+  add/SAD4/genblk1[23].m2/in[1] (compress3_2_470)     0.000000000
+                                                                 0.724130630 f
+  add/SAD4/genblk1[23].m2/U3/Z (CKXOR2D0BWP12T30P140) 0.035096049
+                                                                 0.759226680 r
+  add/SAD4/genblk1[23].m2/U1/Z (CKXOR2D0BWP12T30P140) 0.032380223
+                                                                 0.791606903 f
+  add/SAD4/genblk1[23].m2/s (compress3_2_470)         0.000000000
+                                                                 0.791606903 f
+  add/SAD4/genblk1[23].genblk1.m3/in[2] (compress4_2_29)
+                                                      0.000000000
+                                                                 0.791606903 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/in[1] (compress3_2_59)
+                                                      0.000000000
+                                                                 0.791606903 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.826703191 r
+  add/SAD4/genblk1[23].genblk1.m3/u1/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032380104
+                                                                 0.859083295 f
+  add/SAD4/genblk1[23].genblk1.m3/u1/s (compress3_2_59)
+                                                      0.000000000
+                                                                 0.859083295 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/in[1] (compress3_2_58)
+                                                      0.000000000
+                                                                 0.859083295 f
+  add/SAD4/genblk1[23].genblk1.m3/u2/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.035096288
+                                                                 0.894179583 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/U2/Z (AO22D0BWP12T30P140)
+                                                      0.027809024
+                                                                 0.921988606 r
+  add/SAD4/genblk1[23].genblk1.m3/u2/c (compress3_2_58)
+                                                      0.000000000
+                                                                 0.921988606 r
+  add/SAD4/genblk1[23].genblk1.m3/carry (compress4_2_29)
+                                                      0.000000000
+                                                                 0.921988606 r
+  add/SAD4/carry[24] (SAD_6_v2)                       0.000000000
+                                                                 0.921988606 r
+  add/result_9_man_carry[24] (adder_pp)               0.000000000
+                                                                 0.921988606 r
+  compress_group/in2[24] (compressor3_2_group)        0.000000000
+                                                                 0.921988606 r
+  compress_group/genblk1[24].compress/in[1] (compress3_2_878)
+                                                      0.000000000
+                                                                 0.921988606 r
+  compress_group/genblk1[24].compress/U3/Z (CKXOR2D0BWP12T30P140)
+                                                      0.032940745
+                                                                 0.954929352 f
+  compress_group/genblk1[24].compress/U1/Z (CKXOR2D0BWP12T30P140)
+                                                      0.039594650
+                                                                 0.994524002 r
+  compress_group/genblk1[24].compress/s (compress3_2_878)
+                                                      0.000000000
+                                                                 0.994524002 r
+  compress_group/s[24] (compressor3_2_group)          0.000000000
+                                                                 0.994524002 r
+  pipe2/sum[24] (reg_pipeline2)                       0.000000000
+                                                                 0.994524002 r
+  pipe2/sum_p2_reg[24]/D (DFCNQOPTSADD8BWP12T30P140)  0.000000000
+                                                                 0.994524002 r
+  data arrival time                                              0.994524002
+
+  clock clk_DQS (rise edge)                           0.899999976
+                                                                 0.899999976
+  clock network delay (propagated)                    0.023679337
+                                                                 0.923679292
+  pipe2/sum_p2_reg[24]/CP (DFCNQOPTSADD8BWP12T30P140) 0.000000000
+                                                                 0.923679292 r
+  library setup time                                  0.024725907
+                                                                 0.948405206
+  data required time                                             0.948405206
+  --------------------------------------------------------------------------
+  data required time                                             0.948405206
+  data arrival time                                              -0.994524002
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                               -0.046118796
+
+
+1

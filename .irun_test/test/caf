@@ -1,0 +1,2 @@
+../src/sync_adder4.v
+../test/testbench.v

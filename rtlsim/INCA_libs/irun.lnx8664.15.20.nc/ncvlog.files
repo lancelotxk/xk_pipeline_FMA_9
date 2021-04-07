@@ -1,0 +1,24 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+/home/xukun/Templates/xk/src/verilog/unpack.v
+/home/xukun/Templates/xk/src/verilog/adder_pp.v
+/home/xukun/Templates/xk/src/verilog/adder.v
+/home/xukun/Templates/xk/src/verilog/align.v
+/home/xukun/Templates/xk/src/verilog/complemmet_c.v
+/home/xukun/Templates/xk/src/verilog/compress3_2.v
+/home/xukun/Templates/xk/src/verilog/compress4_2.v
+/home/xukun/Templates/xk/src/verilog/compress6_2.v
+/home/xukun/Templates/xk/src/verilog/compressor3_2_group.v
+/home/xukun/Templates/xk/src/verilog/my_multp.v
+/home/xukun/Templates/xk/src/verilog/exponentComparison.v
+/home/xukun/Templates/xk/src/verilog/SAD_6_v2.v
+/home/xukun/Templates/xk/src/verilog/LZC.v
+/home/xukun/Templates/xk/src/verilog/normalize.v
+/home/xukun/Templates/xk/src/verilog/SAD_6.v
+/home/xukun/Templates/xk/src/verilog/shifter.v
+/home/xukun/Templates/xk/src/verilog/fpfma_pipeline.v
+/home/xukun/Templates/xk/src/verilog/CLA_adder.v
+/home/xukun/Templates/xk/src/verilog/carry_select_adder.v
+/home/xukun/Templates/xk/src/testbench/t_fpfma_pipeline.v
